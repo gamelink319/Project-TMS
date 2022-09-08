@@ -12,7 +12,7 @@ public enum TestScenario {
 		testTMS = value;
 	}
 	
-	public String getTestName() {
+	public String getTestTMS() {
 		return testTMS;
 	}
 }
