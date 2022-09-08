@@ -7,8 +7,8 @@ import io.cucumber.testng.CucumberOptions;
 			features = {"",
 						""},
 				glue ="com.juaracoding.PageObjectTMS.Staff",
-				plugin={"pretty","html:target/cucumber-reports.html",
-						"json:target/extent-reports.html"})
+				plugin={"pretty","html:target/CucumberStaff-reports.html",
+						"json:target/ExtentStaff-reports.html"})
 public class TestRunnerTMSAStaff extends AbstractTestNGCucumberTests {
 
 }
