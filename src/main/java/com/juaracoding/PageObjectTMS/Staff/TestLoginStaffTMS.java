@@ -28,6 +28,7 @@ public class TestLoginStaffTMS {
 	
 	public void clickLogin() {
 		clickBtnLogin.click();
+		
 	}
 
 }
