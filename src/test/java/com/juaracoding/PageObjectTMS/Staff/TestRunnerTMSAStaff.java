@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 						""},
 				glue ="com.juaracoding.PageObjectTMS.Staff",
 				plugin={"pretty","html:target/CucumberStaff-reports.html",
-						"json:target/ExtentStaff-reports.html"})
+						"json:target/extentStaff-reports.html"})
 public class TestRunnerTMSAStaff extends AbstractTestNGCucumberTests {
 
 }

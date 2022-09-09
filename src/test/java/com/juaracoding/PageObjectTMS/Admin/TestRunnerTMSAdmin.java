@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 						""},
 				glue ="com.juaracoding.PageObjectTMS.Admin",
 				plugin={"pretty","html:target/CucumberAdmin-reports.html",
-						"json:target/ExtentAdmin-reports.html"})
+						"json:target/extentAdmin-reports.html"})
 public class TestRunnerTMSAdmin extends AbstractTestNGCucumberTests {
 
 }
