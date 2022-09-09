@@ -1,6 +1,6 @@
 package Utils;
 
-public enum TestScenario {
+public enum TestScenarioStaff {
 	
 	T1(""),
 	T2(""),
@@ -8,7 +8,7 @@ public enum TestScenario {
 	
 	private String testTMS;
 	
-	TestScenario(String value) {
+	TestScenarioStaff(String value) {
 		testTMS = value;
 	}
 	

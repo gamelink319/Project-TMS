@@ -11,7 +11,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Utils.Constants;
-import Utils.TestScenario;
+import Utils.TestScenarioAdmin;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.AfterStep;
@@ -22,13 +22,13 @@ import Utils.Utils;
 public class HooksTMSAdmin {
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
-	public static ExtentReports reports = new ExtentReports("target/extent-reports.html");
+	public static ExtentReports reports = new ExtentReports("target/extentAdmin-reports.html");
 
 	@Before
 	public void setUP() {
 		DriverSingleton.getInstance(Constants.FIREFOX);
 		driver = DriverSingleton.getDriver();
-		TestScenario[] tests = TestScenario.values();
+		TestScenarioAdmin[] tests = TestScenarioAdmin.values();
 		extentTest = reports.startTest(tests[Utils.testCount].getTestTMS());
 		Utils.testCount++;
 	}
