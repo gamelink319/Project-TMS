@@ -12,7 +12,7 @@ public enum TestScenarioStaff {
 		testTMS = value;
 	}
 	
-	public String getTestTMS() {
+	public String getTestTMSStaff() {
 		return testTMS;
 	}
 }

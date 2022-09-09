@@ -12,7 +12,7 @@ public enum TestScenarioAdmin {
 		testTMS = value;
 	}
 	
-	public String getTestTMS() {
+	public String getTestTMSAdmin() {
 		return testTMS;
 	}
 }

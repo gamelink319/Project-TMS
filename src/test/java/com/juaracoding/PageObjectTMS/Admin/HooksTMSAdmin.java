@@ -29,7 +29,7 @@ public class HooksTMSAdmin {
 		DriverSingleton.getInstance(Constants.FIREFOX);
 		driver = DriverSingleton.getDriver();
 		TestScenarioAdmin[] tests = TestScenarioAdmin.values();
-		extentTest = reports.startTest(tests[Utils.testCount].getTestTMS());
+		extentTest = reports.startTest(tests[Utils.testCount].getTestTMSAdmin());
 		Utils.testCount++;
 	}
 	
