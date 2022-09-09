@@ -18,8 +18,7 @@ Feature: Login Staff
     When Staff enter NIK password invalid
     And Staff click button login
     Then Staff invalid login
-    
-    
+        
   @tag3
   Scenario: Staff valid login
     When Staff enter NIK password valid

@@ -12,7 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class TestStaffLoginTMS {
-	
+
 	public static WebDriver driver;
 	private static ExtentTest extentest;
 	private TestLoginStaffTMS testLoginStaffTMS = new TestLoginStaffTMS();
@@ -21,31 +21,30 @@ public class TestStaffLoginTMS {
 		driver = HooksTMSAStaff.driver;
 		extentest = HooksTMSAStaff.extentTest;
 	}
-	
+
 	@When("Staff go to web ptdika")
 	public void staff_go_to_web_ptdika() {
 		driver = DriverSingleton.getDriver();
 		driver.get(Constants.URL);
 		extentest.log(LogStatus.PASS, "Staff go to web ptdika");
-		
+
 	}
-	
+
 	@And("Staff enter password")
 	public void staff_enter_password() {
 		testLoginStaffTMS.login1("hallo");
 		extentest.log(LogStatus.PASS, "Staff enter password");
 	}
-	
+
 	@And("Staff click button login")
 	public void staff_click_button_login() {
 		testLoginStaffTMS.clickLogin();
 		extentest.log(LogStatus.PASS, "Staff click button login");
 	}
-	
+
 	@Then("Staff invalid login")
 	public void staff_invalid_login() {
-		
+
 	}
-	
 
 }
