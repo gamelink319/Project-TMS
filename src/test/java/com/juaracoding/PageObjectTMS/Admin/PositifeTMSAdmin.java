@@ -10,7 +10,6 @@ import org.openqa.selenium.interactions.SendKeysAction;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
 import io.cucumber.java.en.And;
 
 import io.cucumber.java.en.Then;
@@ -28,7 +27,6 @@ public class PositifeTMSAdmin {
 		driver = HooksTMSAdmin.driver;
 		extentTest = HooksTMSAdmin.extentTest;
 	}
-
 
 	@When("Admin click list absen")
 	public void Admin_click_list_absen() {
@@ -93,7 +91,7 @@ public class PositifeTMSAdmin {
 		assertTrue(formAbsen.CheckFile());
 		extentTest.log(LogStatus.PASS, "Admin validate data");
 	}
-	
+
 	@Then("Admin validate No Data")
 	public void Admin_validate_No_data() {
 		HooksTMSAdmin.delay(3);
@@ -103,12 +101,10 @@ public class PositifeTMSAdmin {
 		driver.switchTo().alert().accept();
 		extentTest.log(LogStatus.PASS, "Admin validate No Data");
 	}
-	
+
 	@When("Admin select position null")
 	public void Admin_select_position_null() {
-//		formAbsen.ClickSelectPosition();
-//		formAbsen.InputSelect("");
+		System.out.println("Skip karna null");
 		HooksTMSAdmin.delay(2);
-//		extentTest.log(LogStatus.PASS, "Admin select position null");
 	}
 }
