@@ -24,6 +24,16 @@ public class LoginAdmin {
 
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement BtnLogin;
+    
+	@FindBy(xpath = "//center[normalize-space()='Selamat datang, Admin TMS']")
+	private WebElement GetTitleDashboard;
+	
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissable']")
+	private WebElement AlertFail;
+	
+	@FindBy(xpath = "//button[@type='button']")
+	private WebElement BtnAlert;
+
 
 	public void InputNIK(String NIK) {
 		InputNIK.sendKeys(NIK);
@@ -35,5 +45,16 @@ public class LoginAdmin {
 	
 	public void ButtonLogin() {
 		BtnLogin.click();
+	}
+	
+	public String GetTextDashboard() {
+		return GetTitleDashboard.getText();
+	}
+	
+	public Boolean GetAlert() {
+		if(AlertFail.getText().contains("Wrong")) {
+			return true;
+		}
+		return GetAlert();
 	}
 }

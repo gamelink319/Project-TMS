@@ -36,6 +36,24 @@ public class AdminReportAbsen {
 	@FindBy(xpath = "//a[normalize-space()='Absen Non Shifting']")
 	private WebElement BtnAbsenNonShifting;
 
+	@FindBy(xpath = "//h4[normalize-space()='Report Masuk!!!']")
+	private WebElement GetTextAbsenMasuk;
+	
+	@FindBy(xpath = "//h4[normalize-space()='Report Pulang!!!']")
+	private WebElement GetTextAbsenPulang;
+	
+	@FindBy(xpath = "//h4[normalize-space()='Report Sakit!!!']")
+	private WebElement GetTextAbsenSakit;
+	
+	@FindBy(xpath = "//h4[normalize-space()='Report OFF!!!']")
+	private WebElement GetTextAbsenOff;
+	
+	@FindBy(xpath = "//div[@class='panel-heading ui-sortable-handle']")
+	private WebElement GetTextShifting;
+	
+	@FindBy(xpath = "//a[normalize-space()='Absen Off']")
+	private WebElement GetTextNonShifting;
+
 	public void ClickListAbsen() {
 		BtnListAbsen.click();
 	}
@@ -62,5 +80,29 @@ public class AdminReportAbsen {
 
 	public void ClickAbsenNonShifting() {
 		BtnAbsenNonShifting.click();
+	}
+	
+	public String GetAbsenMasuk() {
+		return GetTextAbsenMasuk.getText();
+	}
+	
+	public String GetAbsenPulang() {
+		return GetTextAbsenOff.getText();
+	}
+	
+	public String GetAbsenSakit() {
+		return GetTextAbsenSakit.getText();
+	}
+	
+	public String GetAbsenOff() {
+		return GetTextAbsenOff.getText();
+	}
+	
+	public String GetAbsenShifting() {
+		return GetTextShifting.getText();
+	}
+	
+	public String getAbsenNonShifString() {
+		return GetTextNonShifting.getText();
 	}
 }

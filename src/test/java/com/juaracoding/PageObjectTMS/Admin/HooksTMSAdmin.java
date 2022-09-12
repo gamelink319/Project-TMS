@@ -46,6 +46,7 @@ public class HooksTMSAdmin {
 		reports.endTest(extentTest);
 		reports.flush();
 	}
+	
 	@AfterAll
 	public static void CloseBrowser() {
 		delay(5);

@@ -1,5 +1,7 @@
 package com.juaracoding.PageObjectTMS.Admin;
 
+import java.io.File;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +24,7 @@ public class FormAdminReportAbsen {
 	@FindBy(xpath = "//div[contains(text(),'-- Branch --')]")
 	private WebElement BtnBranch;
 
-	@FindBy(xpath = "//button[@title='-- Unit --']")
+	@FindBy(xpath = "//div[contains(text(),'-- Unit --')]")
 	private WebElement BtnUnit;
 
 	@FindBy(xpath = "//div[@class='dropdown-menu show']//input[@aria-label='Search']")
@@ -65,4 +67,21 @@ public class FormAdminReportAbsen {
 	public void ClickBtnExport() {
 		BtnExportData.click();
 	}
+	
+	public void ClickBtnExportNoData() {
+		BtnExportData.click();
+	}
+	
+	public Boolean CheckFile() {
+		File fileLocation = new File("C:\\Users\\Xh\\Downloads");
+		File[] totalfiles = fileLocation.listFiles();
+
+		for (File file : totalfiles) {
+			if (file.getName().contains("absen")) {
+				System.out.println(file.getName() + " file sudah di cek");
+				return true;
+			}
+		}
+		return CheckFile();
+	}	
 }
