@@ -26,7 +26,7 @@ public class HooksTMSAStaff {
 
 	@Before
 	public void setUP() {
-		DriverSingleton.getInstance(Constants.FIREFOX);
+		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
 		TestScenario[] tests = TestScenario.values();
 		extentTest = reports.startTest(tests[Utils.testCount].getTestTMS());
