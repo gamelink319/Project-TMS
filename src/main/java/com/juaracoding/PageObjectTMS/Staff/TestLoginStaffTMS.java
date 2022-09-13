@@ -43,7 +43,7 @@ public class TestLoginStaffTMS {
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement clickBtnLogin3;
 
-	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissable']")
+	@FindBy(xpath = "//*[@id=\"page-container\"]/div/div[1]")
 	private WebElement getWrongUsernameOrPassword;
 
 	@FindBy(xpath = "//input[@placeholder='NIK']")
