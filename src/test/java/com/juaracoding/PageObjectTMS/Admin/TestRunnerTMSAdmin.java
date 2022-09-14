@@ -5,10 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(tags ="",
-			features = {
-					"src/test/resources/features/Admin/TMSAdminSakit.feature"},
+			features = {"src/test/resources/features/Admin/TMSAdminOff.feature"},
 				glue ="com.juaracoding.PageObjectTMS.Admin",
-				plugin={"pretty","html:target/CucumberAdminReportSakitreports.html",
+				plugin={"pretty","html:target/CucumberAdminReportOff-reports.html",
 						"json:target/extentAdmin-reports.html"})
 public class TestRunnerTMSAdmin extends AbstractTestNGCucumberTests {
 }

@@ -77,6 +77,21 @@ public class PositifeTMSAdmin {
 		extentTest.log(LogStatus.PASS, "Admin go to absen sakit");
 	}
 	
+	@And("Admin choose absen off")
+	public void Admin_choose_absen_off() {
+		reportAbsen.ClickAbsenOff();;
+		extentTest.log(LogStatus.PASS, "Admin choose absen off");
+	}
+
+	@Then("Admin go to absen off")
+	public void Admin_go_to_absen_off() {
+		HooksTMSAdmin.delay(1);
+		reportAbsen.GetAbsenOff();
+		assertEquals(reportAbsen.GetAbsenOff(), "Report OFF!!!");
+		extentTest.log(LogStatus.PASS, "Admin go to absen off");
+	}
+	
+	
 	@When("Admin select position all")
 	public void Admin_select_position_all() {
 		formAbsen.ClickSelectPosition();
