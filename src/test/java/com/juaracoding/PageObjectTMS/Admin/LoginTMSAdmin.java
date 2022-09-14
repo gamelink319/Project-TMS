@@ -83,5 +83,20 @@ public class LoginTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		login.GetAlert();
 		assertTrue(login.GetAlert());
+		extentTest.log(LogStatus.PASS, "Admin invalid credentials");
+	}
+	
+	@When("Admin click btnLogout")
+	public void Admin_click_btnlogout() {
+		login.logout();
+		extentTest.log(LogStatus.PASS, "Admin click btnLogout");
+	}
+	
+	@Then("Admin back to login TMS")
+	public void Admin_back_to_login_TMS() {
+		HooksTMSAdmin.delay(2);
+		String v = "DIKA";
+		assertEquals(login.gettextdika(), v);
+		extentTest.log(LogStatus.PASS, "Admin back to login TMS");
 	}
 }

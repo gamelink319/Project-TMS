@@ -87,7 +87,7 @@ public class AdminReportAbsen {
 	}
 	
 	public String GetAbsenPulang() {
-		return GetTextAbsenOff.getText();
+		return GetTextAbsenPulang.getText();
 	}
 	
 	public String GetAbsenSakit() {

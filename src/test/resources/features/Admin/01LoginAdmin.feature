@@ -20,3 +20,7 @@ Scenario: Admin valid login
 	When Admin enter username True and password True
 	And Admin click button login
 	Then Admin valid login
+
+Scenario: Admin Logout
+	When Admin click btnLogout
+	Then Admin back to login TMS

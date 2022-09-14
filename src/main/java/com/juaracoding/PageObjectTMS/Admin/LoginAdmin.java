@@ -24,37 +24,50 @@ public class LoginAdmin {
 
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement BtnLogin;
-    
+
 	@FindBy(xpath = "//center[normalize-space()='Selamat datang, Admin TMS']")
 	private WebElement GetTitleDashboard;
-	
+
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissable']")
 	private WebElement AlertFail;
-	
+
 	@FindBy(xpath = "//button[@type='button']")
 	private WebElement BtnAlert;
 
+	@FindBy(xpath = "//i[@class='fa fa-power-off']")
+	private WebElement Btnlogout;
 
+	@FindBy(xpath = "//b[normalize-space()='DIKA']")
+	private WebElement getTextDika;
+	
 	public void InputNIK(String NIK) {
 		InputNIK.sendKeys(NIK);
 	}
-	
+
 	public void InputPassword(String Password) {
 		InputPassword.sendKeys(Password);
 	}
-	
+
 	public void ButtonLogin() {
 		BtnLogin.click();
 	}
-	
+
 	public String GetTextDashboard() {
 		return GetTitleDashboard.getText();
 	}
-	
+
 	public Boolean GetAlert() {
-		if(AlertFail.getText().contains("Wrong")) {
+		if (AlertFail.getText().contains("Wrong")) {
 			return true;
 		}
 		return GetAlert();
+	}
+
+	public void logout() {
+		Btnlogout.click();
+	}
+	
+	public String gettextdika() {
+		return getTextDika.getText();
 	}
 }

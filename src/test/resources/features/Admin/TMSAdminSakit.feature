@@ -1,4 +1,4 @@
-Feature: Scenario Admin Absen Masuk
+Feature: Scenario Admin Absen Sakit
 
 Scenario: Admin valid login
 	Given Admin go to web TMS
@@ -8,45 +8,45 @@ Scenario: Admin valid login
 	
 Scenario: Admin Select Absen from dashboard
 	When Admin click list absen
-	And Admin choose absen masuk
-	Then Admin go to absen masuk
+	And Admin choose absen sakit
+	Then Admin go to absen sakit
 	
-Scenario: Admin input form absen masuk position call center
+Scenario: Admin input form absen sakit position call center
 	When Admin select position call center 
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 
-Scenario: Admin input form absen masuk position admin credit
+Scenario: Admin input form absen sakit position admin credit
 	When Admin select position admin credit
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 	
-Scenario: Admin input form absen masuk position spg
+Scenario: Admin input form absen sakit position spg
 	When Admin select position spg 
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 	
-Scenario: Admin input form absen masuk position null
+Scenario: Admin input form absen sakit position null
 	When Admin select position null 
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 
-Scenario: Admin input form absen masuk branch bandung
+Scenario: Admin input form absen sakit branch bandung
 	When Admin select position all 
 	And Admin select branch bandung
 	When Admin select unit all
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 	
-Scenario: Admin input form absen masuk branch jakarta
+Scenario: Admin input form absen sakit branch jakarta
 	When Admin select position all 
 	And Admin select branch jakarta
 	When Admin select unit all
@@ -55,35 +55,35 @@ Scenario: Admin input form absen masuk branch jakarta
 	Then Admin validate data
 	And Refresh page
 	
-Scenario: Admin input form absen masuk branch surabaya
+Scenario: Admin input form absen sakit branch surabaya
 	When Admin select position all 
 	And Admin select branch surabaya
 	When Admin select unit all
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 	
-Scenario: Admin input form absen masuk branch null
+Scenario: Admin input form absen sakit branch null
 	When Admin select position all 
 	And Admin select branch null
 	When Admin select unit all
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 
-Scenario: Admin input form absen masuk unit airasia
+Scenario: Admin input form absen sakit unit airasia
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit airasia
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 
-Scenario: Admin input form absen masuk unit bca api
+Scenario: Admin input form absen sakit unit bca api
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit bca api
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 
-Scenario: Admin input form absen masuk branch it programmer
+Scenario: Admin input form absen sakit branch it programmer
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit it programmer
@@ -92,42 +92,42 @@ Scenario: Admin input form absen masuk branch it programmer
 	Then Admin validate data
 	And Refresh page
 	
-Scenario: Admin input form absen masuk unit null
+Scenario: Admin input form absen sakit unit null
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit null
 	And Admin input start date true and end date true
 	Then Admin validate No Data
 
-Scenario: Admin input form absen masuk start date lebih dari 1bulan dari end date
+Scenario: Admin input form absen sakit start date lebih dari 1bulan dari end date
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input start date lebih dari 1bulan and end date true
 	Then Admin validate wrong input date
 	
-Scenario: Admin input form absen masuk start date lebih tinggi dari end date
+Scenario: Admin input form absen sakit start date lebih tinggi dari end date
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input start date lebih tinggi dari end date
 	Then Admin validate No Data
 	
-	Scenario: Admin input form absen masuk end date lebih dari 1bulan dari start date
+	Scenario: Admin input form absen sakit end date lebih dari 1bulan dari start date
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input end date lebih dari 1bulan and start date true
 	Then Admin validate wrong input date
 	
-Scenario: Admin input form absen masuk end date lebih rendah dari start date
+Scenario: Admin input form absen sakit end date lebih rendah dari start date
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input end date lebih rendah dari start date
 	Then Admin validate No Data
 	
-Scenario: Admin input form absen masuk Positife
+Scenario: Admin input form absen sakit Positife
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit all
