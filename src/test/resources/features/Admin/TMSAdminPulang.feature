@@ -104,7 +104,7 @@ Scenario: Admin input form absen pulang start date lebih dari 1bulan dari end da
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input start date lebih dari 1bulan and end date true
-	Then Admin validate wrong input date
+	Then Admin validate No Data
 	
 Scenario: Admin input form absen pulang start date lebih tinggi dari end date
 	When Admin select position all 
@@ -118,7 +118,7 @@ Scenario: Admin input form absen pulang start date lebih tinggi dari end date
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input end date lebih dari 1bulan and start date true
-	Then Admin validate wrong input date
+	Then Admin validate No Data
 	
 Scenario: Admin input form absen pulang end date lebih rendah dari start date
 	When Admin select position all 
