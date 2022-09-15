@@ -4,8 +4,6 @@ import java.io.IOException;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
-
 import com.juaracoding.PageObjectTMS.Drivers.DriverSingleton;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;

@@ -34,6 +34,24 @@ public class AbsenIzinPage {
 	@FindBy(xpath = "//*[@id=\"page-wrapper\"]/div/div[1]/div/h1")
 	private WebElement getTxtAbsenIzin;
 	
+	@FindBy(xpath = "//*[@id=\"selectImage\"]/label")
+	private WebElement getBtnUploadFile;
+	
+	@FindBy(xpath = "//label[normalize-space()='Divisi']")
+	private WebElement getDivisi;
+	
+	@FindBy(xpath = "//label[normalize-space()='Nama Shift']")
+	private WebElement getNamaShift;
+	
+	@FindBy(xpath = "//label[normalize-space()='Tipe Absen']")
+	private WebElement getTipeAbsen;
+	
+	@FindBy(xpath = "//label[normalize-space()='Isi Keterangan di bawah ini !']")
+	private WebElement getTextArea;
+	
+	@FindBy(xpath = "//input[@value='Submit']")
+	private WebElement getBtnSubmit;
+	
 	public void staffLogin(String nik, String password) {
 		this.inputNIK.sendKeys(nik);
 		this.inputPassword.sendKeys(password);
@@ -53,6 +71,30 @@ public class AbsenIzinPage {
 	
 	public String getFormAbsenIzin() {
 		return getTxtAbsenIzin.getText();
+	}
+	
+	public String getUploadFile() {
+		return getBtnUploadFile.getText();
+	}
+	
+	public String getSelectDivisi() {
+		return getDivisi.getText();
+	}
+	
+	public String getSelectNamaShift() {
+		return getNamaShift.getText();
+	}
+	
+	public String getSelectAbsen() {
+		return getTipeAbsen.getText();
+	}
+	
+	public String getColoumnText() {
+		return getTextArea.getText();
+	}
+	
+	public String getButtonSubmit() {
+		return getBtnSubmit.getAttribute("btn btn-primary");
 	}
 	
 
