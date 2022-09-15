@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
 
 import com.juaracoding.PageObjectTMS.Drivers.DriverSingleton;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -32,20 +33,21 @@ public class HooksTMSAStaff {
 		extentTest = reports.startTest(tests[Utils.testCount].getTestTMS());
 		Utils.testCount++;
 	}
-	
+
 	@AfterStep
 	public void getResultStatus(Scenario scenario) throws IOException {
 		if (scenario.isFailed()) {
 			String scrennshotpath = Utils.getScreenshot(driver, scenario.getName().replace(" ", "_"));
-			extentTest.log(LogStatus.FAIL, scenario.getName()+"\n"+extentTest.addScreenCapture(scrennshotpath));
+			extentTest.log(LogStatus.FAIL, scenario.getName() + "\n" + extentTest.addScreenCapture(scrennshotpath));
 		}
 	}
-	
+
 	@After
 	public void ex() {
 		reports.endTest(extentTest);
 		reports.flush();
 	}
+
 	@AfterAll
 	public static void CloseBrowser() {
 		delay(5);

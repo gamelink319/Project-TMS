@@ -2,9 +2,9 @@ package Utils;
 
 public enum TestScenario {
 	
-	T1(""),
-	T2(""),
-	T3("");
+	T1("Staff valid loginB1"),
+	T2("Staff valid loginB2");
+	
 	
 	private String testTMS;
 	
