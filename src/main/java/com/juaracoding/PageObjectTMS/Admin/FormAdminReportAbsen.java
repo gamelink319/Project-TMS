@@ -67,11 +67,11 @@ public class FormAdminReportAbsen {
 	public void ClickBtnExport() {
 		BtnExportData.click();
 	}
-	
+
 	public void ClickBtnExportNoData() {
 		BtnExportData.click();
 	}
-	
+
 	public Boolean CheckFile() {
 		File fileLocation = new File("C:\\Users\\Xh\\Downloads");
 		File[] totalfiles = fileLocation.listFiles();
@@ -83,5 +83,18 @@ public class FormAdminReportAbsen {
 			}
 		}
 		return CheckFile();
-	}	
+	}
+
+	public Boolean validFile() {
+		File fileLocation = new File("C:\\Users\\Xh\\Downloads");
+		File[] totalfiles = fileLocation.listFiles();
+
+		for (File file : totalfiles) {
+			if (file.getName().contains("data_absen")) {
+				System.out.println(file.getName() + " file sudah di cek");
+				return true;
+			}
+		}
+		return CheckFile();
+	}
 }

@@ -15,7 +15,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class PositifeTMSAdmin {
+public class ReportTMSAdmin {
 
 	WebDriver driver;
 	private LoginAdmin login = new LoginAdmin();
@@ -23,8 +23,8 @@ public class PositifeTMSAdmin {
 	private FormAdminReportAbsen formAbsen = new FormAdminReportAbsen();
 	private static ExtentTest extentTest;
 	String x;
-	
-	public PositifeTMSAdmin() {
+
+	public ReportTMSAdmin() {
 		driver = HooksTMSAdmin.driver;
 		extentTest = HooksTMSAdmin.extentTest;
 	}
@@ -62,10 +62,11 @@ public class PositifeTMSAdmin {
 		assertEquals(reportAbsen.GetAbsenPulang(), "Report Pulang!!!");
 		extentTest.log(LogStatus.PASS, "Admin go to absen pulang");
 	}
-	
+
 	@And("Admin choose absen sakit")
 	public void Admin_choose_absen_sakit() {
-		reportAbsen.ClickAbsenSakit();;
+		reportAbsen.ClickAbsenSakit();
+		;
 		extentTest.log(LogStatus.PASS, "Admin choose absen sakit");
 	}
 
@@ -76,10 +77,11 @@ public class PositifeTMSAdmin {
 		assertEquals(reportAbsen.GetAbsenSakit(), "Report Sakit!!!");
 		extentTest.log(LogStatus.PASS, "Admin go to absen sakit");
 	}
-	
+
 	@And("Admin choose absen off")
 	public void Admin_choose_absen_off() {
-		reportAbsen.ClickAbsenOff();;
+		reportAbsen.ClickAbsenOff();
+		;
 		extentTest.log(LogStatus.PASS, "Admin choose absen off");
 	}
 
@@ -90,8 +92,37 @@ public class PositifeTMSAdmin {
 		assertEquals(reportAbsen.GetAbsenOff(), "Report OFF!!!");
 		extentTest.log(LogStatus.PASS, "Admin go to absen off");
 	}
-	
-	
+
+	@And("Admin choose absen shifting")
+	public void Admin_choose_absen_shifting() {
+		reportAbsen.ClickAbsenShifting();
+		;
+		extentTest.log(LogStatus.PASS, "Admin choose absen shifting");
+	}
+
+	@Then("Admin go to absen shifting")
+	public void Admin_go_to_absen_shifting() {
+		HooksTMSAdmin.delay(1);
+		reportAbsen.GetAbsenShifting();
+		assertEquals(reportAbsen.GetAbsenShifting(), "Report Absen SHIFTING");
+		extentTest.log(LogStatus.PASS, "Admin go to absen off");
+	}
+
+	@And("Admin choose absen non shifting")
+	public void Admin_choose_absen_non_shifting() {
+		reportAbsen.ClickAbsenNonShifting();
+		;
+		extentTest.log(LogStatus.PASS, "Admin choose absen non shifting");
+	}
+
+	@Then("Admin go to absen non shifting")
+	public void Admin_go_to_absen_non_shifting() {
+		HooksTMSAdmin.delay(1);
+		reportAbsen.getAbsenNonShifString();
+		assertEquals(reportAbsen.getAbsenNonShifString(), "Report Absen NON SHIFTING");
+		extentTest.log(LogStatus.PASS, "Admin go to absen non shifting");
+	}
+
 	@When("Admin select position all")
 	public void Admin_select_position_all() {
 		formAbsen.ClickSelectPosition();
@@ -106,6 +137,14 @@ public class PositifeTMSAdmin {
 		formAbsen.InputSelect("all");
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select branch all");
+	}
+
+	@When("Admin select position manager")
+	public void Admin_branch_manager() {
+		formAbsen.ClickSelectPosition();
+		formAbsen.InputSelect("manager");
+		HooksTMSAdmin.delay(2);
+		extentTest.log(LogStatus.PASS, "Admin select branch manager");
 	}
 
 	@When("Admin select unit all")
@@ -148,7 +187,20 @@ public class PositifeTMSAdmin {
 		driver.switchTo().alert().accept();
 		extentTest.log(LogStatus.PASS, "Admin validate No Data");
 	}
-	
+
+	@Then("Admin validate tidak ada data")
+	public void Admin_validate_tidak_ada_data() {
+		HooksTMSAdmin.delay(1);
+		formAbsen.ClickBtnExportNoData();
+		HooksTMSAdmin.delay(1);
+		String TxtAlert = driver.switchTo().alert().getText();
+		System.out.println(TxtAlert);
+		assertEquals(TxtAlert, "Tidak Ada Data");
+		driver.switchTo().alert().accept();
+		HooksTMSAdmin.delay(3);
+		extentTest.log(LogStatus.PASS, "Admin validate tidak ada data");
+	}
+
 	@Then("Admin validate wrong input date")
 	public void Admin_validate_wrong_input_date() {
 		HooksTMSAdmin.delay(1);
@@ -160,14 +212,14 @@ public class PositifeTMSAdmin {
 		driver.switchTo().alert().accept();
 		extentTest.log(LogStatus.PASS, "Admin validate wrong input date");
 	}
-	
+
 	@When("Admin select position null")
 	public void Admin_select_position_null() {
 		System.out.println("Skip karna null");
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select position null");
 	}
-	
+
 	@When("Admin select position call center")
 	public void Admin_select_position_callcenter() {
 		formAbsen.ClickSelectPosition();
@@ -175,7 +227,7 @@ public class PositifeTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select position call center");
 	}
-	
+
 	@When("Admin select position admin credit")
 	public void Admin_select_position_admin_credit() {
 		formAbsen.ClickSelectPosition();
@@ -183,7 +235,7 @@ public class PositifeTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select admin credit");
 	}
-	
+
 	@When("Admin select position spg")
 	public void Admin_select_position_rentcar() {
 		formAbsen.ClickSelectPosition();
@@ -191,14 +243,14 @@ public class PositifeTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select position spg");
 	}
-	
+
 	@And("Admin select branch null")
 	public void Admin_branch_null() {
 		System.out.println("Skip branch karna null");
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select branch null");
 	}
-	
+
 	@And("Admin select branch bandung")
 	public void Admin_branch_bandung() {
 		formAbsen.ClickSelectBranch();
@@ -206,7 +258,7 @@ public class PositifeTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select branch bandung");
 	}
-	
+
 	@And("Admin select branch jakarta")
 	public void Admin_branch_jakarta() {
 		formAbsen.ClickSelectBranch();
@@ -214,6 +266,7 @@ public class PositifeTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select branch jakarta");
 	}
+
 	@And("Admin select branch surabaya")
 	public void Admin_branch_surabaya() {
 		formAbsen.ClickSelectBranch();
@@ -221,13 +274,13 @@ public class PositifeTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select branch surabaya");
 	}
-	
+
 	@And("Refresh page")
 	public void refresh_page() {
 		driver.navigate().refresh();
 		HooksTMSAdmin.delay(3);
 	}
-	
+
 	@When("Admin select unit airasia")
 	public void Admin_select_unit_airasia() {
 		formAbsen.ClickSelectUnit();
@@ -235,6 +288,7 @@ public class PositifeTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select unit airasia");
 	}
+
 	@When("Admin select unit bca api")
 	public void Admin_select_unit_bcaapi() {
 		formAbsen.ClickSelectUnit();
@@ -242,6 +296,7 @@ public class PositifeTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select unit bca api");
 	}
+
 	@When("Admin select unit it programmer")
 	public void Admin_select_unit_itprogrammer() {
 		formAbsen.ClickSelectUnit();
@@ -249,38 +304,48 @@ public class PositifeTMSAdmin {
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select unit it programmer");
 	}
+
 	@When("Admin select unit null")
 	public void Admin_select_unit_null() {
 		System.out.println("Skip unit karna null");
 		HooksTMSAdmin.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select unit null");
 	}
-	
+
 	@And("Admin input start date lebih dari 1bulan and end date true")
 	public void Admin_input_start_date_lebih_dari_satubulan_and_end_date_true() {
 		formAbsen.InputDateStart("2022-09-22");
 		formAbsen.InputDateEnd("2022-08-10");
 		extentTest.log(LogStatus.PASS, "Admin input start date lebih dari 1bulan and end date true");
 	}
-	
+
 	@And("Admin input start date lebih tinggi dari end date")
 	public void Admin_input_start_date_lebih_tinggi_dari_end_date() {
 		formAbsen.InputDateStart("2022-09-13");
 		formAbsen.InputDateEnd("2022-09-10");
 		extentTest.log(LogStatus.PASS, "Admin input start date lebih tinggi dari end date");
 	}
-	
+
 	@And("Admin input end date lebih dari 1bulan and start date true")
 	public void Admin_input_end_date_lebih_dari_satubulan_and_start_date_true() {
 		formAbsen.InputDateStart("2022-08-01");
 		formAbsen.InputDateEnd("2022-09-22");
 		extentTest.log(LogStatus.PASS, "Admin input end date lebih dari 1bulan and start date true");
 	}
-	
+
 	@And("Admin input end date lebih rendah dari start date")
 	public void Admin_input_end_date_lebih_rendah_dari_start_date() {
 		formAbsen.InputDateStart("2022-09-13");
 		formAbsen.InputDateEnd("2022-09-2");
 		extentTest.log(LogStatus.PASS, "Admin input end date lebih rendah dari start date");
+	}
+	
+	@When("Admin checking exist file")
+	public void Admin_checking_exist_file() {
+		HooksTMSAdmin.delay(3);
+		formAbsen.validFile();
+		assertTrue(formAbsen.validFile());
+		System.out.println("Test Barhasil");
+		extentTest.log(LogStatus.PASS, "Admin checking exist file");
 	}
 }

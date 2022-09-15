@@ -113,7 +113,7 @@ Scenario: Admin input form absen masuk start date lebih tinggi dari end date
 	And Admin input start date lebih tinggi dari end date
 	Then Admin validate No Data
 	
-	Scenario: Admin input form absen masuk end date lebih dari 1bulan dari start date
+Scenario: Admin input form absen masuk end date lebih dari 1bulan dari start date
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit all
@@ -126,15 +126,54 @@ Scenario: Admin input form absen masuk end date lebih rendah dari start date
 	When Admin select unit all
 	And Admin input end date lebih rendah dari start date
 	Then Admin validate No Data
-	
-Scenario: Admin input form absen masuk Positife
+
+Scenario: Admin input form absen masuk Position all
 	When Admin select position all 
 	And Admin select branch all
 	When Admin select unit all
 	And Admin input start date true and end date true
 	And Admin click export data 
 	Then Admin validate data
-	
+	And Refresh page
+
+Scenario: Admin input form absen masuk brach all
+	When Admin select position all 
+	And Admin select branch all
+	When Admin select unit all
+	And Admin input start date true and end date true
+	And Admin click export data 
+	Then Admin validate data
+	And Refresh page
+
+Scenario: Admin input form absen masuk unit all
+	When Admin select position all 
+	And Admin select branch all
+	When Admin select unit all
+	And Admin input start date true and end date true
+	And Admin click export data 
+	Then Admin validate data
+	And Refresh page
+
+Scenario: Admin input form absen masuk start date true
+	When Admin select position all 
+	And Admin select branch all
+	When Admin select unit all
+	And Admin input start date true and end date true
+	And Admin click export data 
+	Then Admin validate data
+	And Refresh page
+
+Scenario: Admin input form absen masuk end date true
+	When Admin select position all 
+	And Admin select branch all
+	When Admin select unit all
+	And Admin input start date true and end date true
+	And Admin click export data 
+	Then Admin validate data
+
+Scenario: Admin Checking file
+	When Admin checking exist file
+
 Scenario: Admin Logout
 	When Admin click btnLogout
 	Then Admin back to login TMS

@@ -51,7 +51,7 @@ public class AdminReportAbsen {
 	@FindBy(xpath = "//div[@class='panel-heading ui-sortable-handle']")
 	private WebElement GetTextShifting;
 	
-	@FindBy(xpath = "//a[normalize-space()='Absen Off']")
+	@FindBy(xpath = "//h4[@class='panel-title']")
 	private WebElement GetTextNonShifting;
 
 	public void ClickListAbsen() {
