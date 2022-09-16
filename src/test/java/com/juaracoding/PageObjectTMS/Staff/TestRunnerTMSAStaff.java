@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(tags ="",
-				features = {"src/test/resources/features/Staff/06.SelectTipeShift.feature"},
+				features = {"src/test/resources/features/Staff/07.SelectNamaShift.feature"},
 				glue ="com.juaracoding.PageObjectTMS.Staff",
 				plugin={"pretty","html:target/CucumberStaff-reports.html",
 						"json:target/ExtentStaff-reports.html"})

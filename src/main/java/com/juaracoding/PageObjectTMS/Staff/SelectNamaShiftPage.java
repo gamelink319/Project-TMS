@@ -45,13 +45,49 @@ public class SelectNamaShiftPage {
 	private WebElement nameShiftRequired;
 	
 	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div")
-	private WebElement clickNameShift;
+	private WebElement clickNameShift1;
 	
 	@FindBy(xpath = "//span[normalize-space()='Non Shift']")
-	private WebElement clicNonShift;
+	private WebElement clickNonShift;
 	
 	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/div/div[2]/ul/li[2]/a")
 	private WebElement viewNonShift;	
+	
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div")
+	private WebElement clickNameShift2;
+	
+	@FindBy(xpath = "//span[normalize-space()='D1 (10:00 - 18:00)']")
+	private WebElement clickD1;
+	
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div/div")
+	private WebElement viewD1;	
+
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div")
+	private WebElement clickNameShift3;
+	
+	@FindBy(xpath = "//span[normalize-space()='D2 (12:00 - 20:00)']")
+	private WebElement clickD2;
+	
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div/div")
+	private WebElement viewD2;
+	
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div")
+	private WebElement clickNameShift4;
+	
+	@FindBy(xpath = "//span[normalize-space()='D3 (13:00 - 21:00)']")
+	private WebElement clickD3;
+	
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div/div")
+	private WebElement viewD3;
+	
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div")
+	private WebElement clickNameShift5;
+	
+	@FindBy(xpath = "//span[normalize-space()='SENIN PAGI (09:00 - 14:00)']")
+	private WebElement clickSeninPagi;
+	
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div/div")
+	private WebElement viewSeninPagi;
 	
 	public void staffGoLogin(String nik, String password) {
 		this.inputNIK.sendKeys(nik);
@@ -87,16 +123,64 @@ public class SelectNamaShiftPage {
 		return nameShiftRequired.getTagName();
 	}
 	
-	public void clickButtonNameShiftNamaShift() {
-		clickNameShift.click();
+	public void clickButtonNameShift1() {
+		clickNameShift1.click();
 	}
 	
-	public void selectNamaShift() {
-		clicNonShift.click();
+	public void selectNamaShift1() {
+		clickNonShift.click();
 	}
 	
-	public String getNonShift() {
+	public String getNonShift1() {
 		return viewNonShift.getTagName();
+	}
+	
+	public void clickButtonNameShift2() {
+		clickNameShift2.click();
+	}
+	
+	public void selectNamaShift2() {
+		clickD1.click();
+	}
+	
+	public String getNonShift2() {
+		return viewD1.getTagName();
+	}
+	
+	public void clickButtonNameShift3() {
+		clickNameShift3.click();
+	}
+	
+	public void selectNamaShift3() {
+		clickD2.click();
+	}
+	
+	public String getNonShift3() {
+		return viewD2.getTagName();
+	}
+	
+	public void clickButtonNameShift4() {
+		clickNameShift4.click();
+	}
+	
+	public void selectNamaShift4() {
+		clickD3.click();
+	}
+	
+	public String getNonShift4() {
+		return viewD3.getTagName();
+	}
+	
+	public void clickButtonNameShift5() {
+		clickNameShift5.click();
+	}
+	
+	public void selectNamaShift5() {
+		clickSeninPagi.click();
+	}
+	
+	public String getNonShift5() {
+		return viewSeninPagi.getTagName();
 	}
 
 }

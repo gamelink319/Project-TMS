@@ -90,22 +90,102 @@ public class TestSelectNamaShift {
 	
 	@When("Staff click box name shift")
 	public void staff_click_box_name_shift() {
-		selectNamaShiftPage.clickButtonNameShiftNamaShift();
+		selectNamaShiftPage.clickButtonNameShift1();
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "Staff click box name shift");
 	}
 	
-	@And("Staff choose non shift")
-	public void staff_choose_non_shift() {
-		selectNamaShiftPage.selectNamaShift();
+	@And("Staff choose non shiftG2")
+	public void staff_choose_non_shiftG2() {
+		selectNamaShiftPage.selectNamaShift1();
 		HooksTMSAStaff.delay(2);
-		extentest.log(LogStatus.PASS, "Staff choose non shift");
+		extentest.log(LogStatus.PASS, "Staff choose non shiftG2");
 	}
 	
 	@Then("Nama shift has choosenG2")
 	public void nama_shift_has_choosenG2() {
-		assertEquals(selectNamaShiftPage.getNonShift(), "a");
+		assertEquals(selectNamaShiftPage.getNonShift1(), "a");
 		extentest.log(LogStatus.PASS, "Nama shift has choosenG2");
+	}
+	
+	@When("Staff click D1")
+	public void staff_click_D1() {
+		selectNamaShiftPage.clickButtonNameShift2();
+		HooksTMSAStaff.delay(2);
+		extentest.log(LogStatus.PASS, "Staff click D1");
+	}
+	
+	@And("Staff choose non shiftG3")
+	public void staff_choose_non_shiftG3() {
+		selectNamaShiftPage.selectNamaShift2();
+		HooksTMSAStaff.delay(2);
+		extentest.log(LogStatus.PASS, "Staff choose non shiftG3");
+	}
+	
+	@Then("Nama shift has choosenG3")
+	public void nama_shift_has_choosenG3() {
+		assertEquals(selectNamaShiftPage.getNonShift2(), "div");
+		extentest.log(LogStatus.PASS, "Nama shift has choosenG3");
+	}
+	
+	@When("Staff click D2")
+	public void staff_click_D2() {
+		selectNamaShiftPage.clickButtonNameShift3();
+		HooksTMSAStaff.delay(2);
+		extentest.log(LogStatus.PASS, "Staff click D2");
+	}
+	
+	@And("Staff choose non shiftG4")
+	public void staff_choose_non_shiftG4() {
+		selectNamaShiftPage.selectNamaShift3();
+		HooksTMSAStaff.delay(2);
+		extentest.log(LogStatus.PASS, "Staff choose non shiftG4");
+	}
+	
+	@Then("Nama shift has choosenG4")
+	public void nama_shift_has_choosenG4() {
+		assertEquals(selectNamaShiftPage.getNonShift3(), "div");
+		extentest.log(LogStatus.PASS, "Nama shift has choosenG4");
+	}
+	
+	@When("Staff click D3")
+	public void staff_click_D3() {
+		selectNamaShiftPage.clickButtonNameShift4();
+		HooksTMSAStaff.delay(2);
+		extentest.log(LogStatus.PASS, "Staff click D3");
+	}
+	
+	@And("Staff choose non shiftG5")
+	public void staff_choose_non_shiftG5() {
+		selectNamaShiftPage.selectNamaShift4();
+		HooksTMSAStaff.delay(2);
+		extentest.log(LogStatus.PASS, "Staff choose non shiftG5");
+	}
+	
+	@Then("Nama shift has choosenG5")
+	public void nama_shift_has_choosenG5() {
+		assertEquals(selectNamaShiftPage.getNonShift4(), "div");
+		extentest.log(LogStatus.PASS, "Nama shift has choosenG5");
+	}
+	
+	@When("Staff senin pagi")
+	public void staff_senin_pagi() {
+		selectNamaShiftPage.clickButtonNameShift5();
+		HooksTMSAStaff.delay(2);
+		extentest.log(LogStatus.PASS, "Staff senin pagi");
+	}
+	
+	@And("Staff choose non shiftG6")
+	public void staff_choose_non_shiftG6() {
+		selectNamaShiftPage.selectNamaShift5();
+		HooksTMSAStaff.delay(2);
+		extentest.log(LogStatus.PASS, "Staff choose non shiftG6");
+	}
+	
+	@Then("Nama shift has choosenG6")
+	public void nama_shift_has_choosenG6() {
+		assertEquals(selectNamaShiftPage.getNonShift5(), "div");
+		extentest.log(LogStatus.PASS, "Nama shift has choosenG6");
 	}
 
 }
