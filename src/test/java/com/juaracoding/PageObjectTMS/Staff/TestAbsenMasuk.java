@@ -24,46 +24,46 @@ public class TestAbsenMasuk {
 		driver = HooksTMSAStaff.driver;
 		extentest = HooksTMSAStaff.extentTest;
 	}
-	@Given("Staff login website")
+	@Given("Staff Login Website")
 		public void staff_login_website() {
 		driver.get(Constants.URL);
 		HooksTMSAStaff.delay(2);
-		extentest.log(LogStatus.PASS, "staff login website");
+		extentest.log(LogStatus.PASS, "Staff Login Website");
 	}
-	@When("Input username and password")
+	@When("Input Username and Password")
 	public void input_username_and_password() {
 		HooksTMSAStaff.delay(2);
 		absenmasuk.Inputnik("D6190873");
 		absenmasuk.Inputpassword("2001-07-21");
-		extentest.log(LogStatus.PASS, "input username and password");
+		extentest.log(LogStatus.PASS, "Input Username and Password");
 	}
-	@And ("Klik button login")
-	public void klik_button_login() {
+	@And ("Klik Btn Login")
+	public void klik_Btn_login() {
 		HooksTMSAStaff.delay(2);
 		absenmasuk.btnsubmit();
-		extentest.log(LogStatus.PASS, "klik button login");
+		extentest.log(LogStatus.PASS, "Klik Btn Login");
 	}
-	@Then ("Staff valid login")
+	@Then ("Staff Valid Login")
 	public void Staff_valid_login() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.GetDashboard();
 		assertEquals(absenmasuk.GetDashboard(), "Dashboard");
-		extentest.log(LogStatus.PASS, "staff valid login");
+		extentest.log(LogStatus.PASS, "Staff Valid Login");
 	}
-	@When("Staff click on tab laporan kegiatan")
+	@When("Staff Click On Tab Laporan Kegiatan")
 	public void staff_click_on_tab_laporan_kegiatan() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.btnlaporan();
-		extentest.log(LogStatus.PASS, "staff click on tab laporan kegiatan");
+		extentest.log(LogStatus.PASS, "Staff Click On Tab Laporan Kegiatan");
 	}
-	@And("Click on absen masuk")
+	@And("Click On Absen Masuk")
 	public void click_on_absen_masuk() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.btnmasuk();
-		extentest.log(LogStatus.PASS, "click on absen masuk");
+		extentest.log(LogStatus.PASS, "Click On Absen Masuk");
 	}
-	@Then("Staff valid on tab absen masuk")
-	public void staff_valid_on_tab_absen_masuk() {
+	@Then("Staff Valid On Tab Absen Masuk")
+	public void Staff_Valid_On_Tab_Absen_Masuk() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.GetDashboard();
 		assertEquals(absenmasuk.GetDashboard(), "Absen Masuk");
@@ -106,7 +106,7 @@ public class TestAbsenMasuk {
 		absenmasuk.keterangan();
 		extentest.log(LogStatus.PASS, "Staff Select Tipe Absen");
 	}
-	@Then ("Click submit")
+	@Then ("Click Submit")
 	public void Click_submit() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.submit();
@@ -117,69 +117,55 @@ public class TestAbsenMasuk {
 	
 	// absen pulang
 
-	@When("Staff click on tab laporan kegiatan Two")
-	public void staff_click_on_tab_laporan_kegiatan_Two() {
+	@When("Staff Click On Tab Laporan Kegiatan Two")
+	public void staff_Click_On_Tab_Laporan_Kegiatan_Two() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.Inputlaporan();
-		extentest.log(LogStatus.PASS, "staff click on tab laporan kegiatan");
+		extentest.log(LogStatus.PASS, "Staff Click On Tab Laporan Kegiatan");
 	}
-	@And("Click on absen pulang")
-	public void click_on_absen_pulang() {
+	@And("Click On Absen Pulang")
+	public void Click_On_Absen_Pulang() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.btnpulang();
-		extentest.log(LogStatus.PASS, "click on absen pulang");
+		extentest.log(LogStatus.PASS, "Click On Absen Pulang");
 	}
-	@When("Staff valid on tab absen pulang")
-	public void staff_valid_on_tab_absen_pulang() {
+	@When("Staff Valid On Tab Absen Pulang")
+	public void Staff_Valid_On_Tab_Absen_Pulang() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.GetDashboard();
 		assertEquals(absenmasuk.GetDashboard(), "Absen Pulang");
 		extentest.log(LogStatus.PASS, "Absen Pulang");
 	}
-	@And("Staff Input Upload Foto Selfie pulang")
-	public void Staff_Input_Upload_Foto_Selfie_pulang() {
-		HooksTMSAStaff.delay(3);
-		absenmasuk.btnfile2();
-		extentest.log(LogStatus.PASS, "Staff Input Upload Foto Selfie");
-	}
-	@And("Staff Select Divisi pulang")
-	public void Staff_Select_Divisi_pulang() {
+	@And("Staff Select Divisi Pulang")
+	public void Staff_Select_Divisi_Pulang() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.Inputdivisi("Call Center");;
 		extentest.log(LogStatus.PASS, "Staff Select Divisi");
 	}
-	@And("Staff Select Tipe Shift pulang")
-	public void Staff_Select_Tipe_Shift_pulang() {
+	@And("Staff Select Tipe Shift Pulang")
+	public void Staff_Select_Tipe_Shift_Pulang() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.Inputshift("Call Center 1");
 		HooksTMSAStaff.scroll(300);
-		extentest.log(LogStatus.PASS, "Staff Select Shift");
+		extentest.log(LogStatus.PASS, "Staff Select Shift Pulang");
 	}
-	@And("Staff Select Nama Shift pulang")
-	public void Staff_Select_Nama_Shift_pulang() {
+	@And("Staff Select Nama Shift Pulang")
+	public void Staff_Select_Nama_Shift_Pulang() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.Inputnamashift();
 		extentest.log(LogStatus.PASS, "Staff Select Nama Shift");
 	}
-	@And("Staff select Tipe Absen pulang")
-	public void Staff_select_Tipe_Absen_pulang() {
+	@And("Staff Select Tipe Absen Pulang")
+	public void Staff_select_Tipe_Absen_Pulang() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.Inputtipe("WFH");
-		extentest.log(LogStatus.PASS, "Staff Select Tipe Absen");
+		extentest.log(LogStatus.PASS, "Staff Select Tipe Absen Pulang");
 	}
 	@And("Staff Input Keterangan Pulang")
 	public void Staff_Input_Keterangan_Pulang() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.Inputketerangan();
-		extentest.log(LogStatus.PASS, "Staff Select Tipe Absen");
-	}
-	@Then ("Click submit")
-	public void Click_submit_pulang() {
-		HooksTMSAStaff.delay(3);
-		absenmasuk.inputsubmit();
-		HooksTMSAStaff.delay(3);
-		assertEquals(absenmasuk.Inputalert(), "Input Result");
-		extentest.log(LogStatus.PASS, "Click Submit");
+		extentest.log(LogStatus.PASS, "Staff Select Keterangan Pulang");
 	}
 
 }

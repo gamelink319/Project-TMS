@@ -199,7 +199,7 @@ import com.juaracoding.PageObjectTMS.Drivers.DriverSingleton;
 			public void Inputketerangan() {
 				Inputketerangan.sendKeys("SAYA PALING RAJIN LOHH");
 			}
-			public void inputsubmit() {
+			public void Inputsubmit() {
 				Inputsubmit.click();
 			}
 			public String Inputalert() {

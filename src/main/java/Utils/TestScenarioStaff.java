@@ -2,10 +2,10 @@ package Utils;
 
 public enum TestScenarioStaff {
 	
-	T1("Staff login website"),
-	T2("Select absen staff"),
-	T3("Input form absen masuk"),
-	T4("Input form absen pulang");
+	T1("Staff Login Website"),
+	T2("Select Absen Staff"),
+	T3("Input Form Absen Masuk"),
+	T4("Input Form Absen Pulang");
 	
 	
 	private String testTMS;

@@ -1,34 +1,33 @@
-Feature : Login User
+Feature: Login User
 
 	Scenario: Staff Login Website
-	Given staff login website 
-	When input username and password
-	And Klik button login
-	Then Staff valid login
+	Given Staff Login Website 
+	When Input Username and Password
+	And Klik Btn Login
+	Then Staff Valid Login
 	
-	Scenario: Select absen staff
-	When Staff click On Tab laporan kegiatan
-	And Click on absen masuk
-	Then Staff valid on tab absen masuk
+	Scenario: Select Absen Staff
+	When Staff Click On Tab Laporan Kegiatan
+	And Click On Absen Masuk
+	Then Staff Valid On Tab Absen Masuk
 	
-	Scenario: Input form absen masuk 
+	Scenario: Input Form Absen Masuk 
 	When Staff Input Upload Foto Selfie
 	And Staff Select Divisi
 	And Staff Select Tipe Shift
 	And Staff Select Nama Shift
 	And Staff select Tipe Absen
 	And Staff Input Keterangan
-	Then Click submit
-	
-	Scenario: Input form absen pulang 
-	When Staff click On Tab Laporan Kegiatan Two 
-	And Click on absen pulang
-	When Staff valid on tab absen pulang
-	And Staff input upload foto selfie
-	And Staff select divisi Pulang
-	And Staff select tipe Shift Pulang
-	And Staff select nama Shift Pulang
-	And Staff select tipe Absen Pulang
-	And Staff input keterangan Pulang
-	Then Click submit
-	 
+	Then Click Submit
+
+	Scenario: Input Form Absen Pulang 
+	When Staff Click On Tab Laporan Kegiatan Two 
+	And Click On Absen Pulang
+	When Staff Valid On Tab Absen Pulang
+	And Staff Input Upload Foto Selfie
+	And Staff Select Divisi Pulang
+	And Staff Select Tipe Shift Pulang
+	And Staff Select Nama Shift Pulang
+	And Staff Select Tipe Absen Pulang
+	And Staff Input Keterangan Pulang
+	Then Click Submit
