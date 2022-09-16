@@ -8,11 +8,11 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.juaracoding.PageObjectTMS.Drivers.DriverSingleton;
 
-public class SelectDivisiPage {
+public class SelectNamaShiftPage {
 	
 	private WebDriver driver;
 
-	public SelectDivisiPage() {
+	public SelectNamaShiftPage() {
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}
@@ -33,31 +33,25 @@ public class SelectDivisiPage {
 	private WebElement chooseAbsenIzin;
 	
 	@FindBy(xpath = "//input[@id='file']")
-	private WebElement upload2;
-	
-	@FindBy(xpath = "//input[@value='Submit']")
-	private WebElement clicksubmit1;
-	
-	@FindBy(xpath = "//*[@id=\"divisi\"]")
-	private WebElement divisiRequired;
+	private WebElement upload;
 	
 	@FindBy(xpath = "//*[@id=\"divisi\"]")
 	private WebElement chooseAttraction;
 	
-	@FindBy(xpath = "//*[@id=\"divisi\"]/option[3]")
-	private WebElement doneAttraction;
+	@FindBy(xpath = "//input[@value='Submit']")
+	private WebElement clicksubmit;
 	
-	@FindBy(xpath = "//*[@id=\"divisi\"]")
-	private WebElement chooseRentCar;
+	@FindBy(xpath = "//div[@class='filter-option-inner-inner']")
+	private WebElement nameShiftRequired;
 	
-	@FindBy(xpath = "//*[@id=\"divisi\"]/option[3]")
-	private WebElement doneRentCar;
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/button/div/div")
+	private WebElement clickNameShift;
 	
-	@FindBy(xpath = "//*[@id=\"divisi\"]")
-	private WebElement chooseCallCenter;
+	@FindBy(xpath = "//span[normalize-space()='Non Shift']")
+	private WebElement clicNonShift;
 	
-	@FindBy(xpath = "//*[@id=\"div-type-shift\"]/label")
-	private WebElement showTipeShift;
+	@FindBy(xpath = "//*[@id=\"uploadimage\"]/div[4]/div/div/div[2]/ul/li[2]/a")
+	private WebElement viewNonShift;	
 	
 	public void staffGoLogin(String nik, String password) {
 		this.inputNIK.sendKeys(nik);
@@ -77,42 +71,32 @@ public class SelectDivisiPage {
 	}
 	
 	public void getFile(String img) {
-		this.upload2.sendKeys(img);
+		this.upload.sendKeys(img);
 	}
 	
-	public void clickButtonSubmit1() {
-		clicksubmit1.click();
-	}
-	
-	public String getTxtRequired() {
-		return divisiRequired.getAttribute("required");
-	}
-	
-	public void selectDivisi1() {
+	public void selectTipeShift() {
 		Select select = new Select(chooseAttraction);
 		select.selectByValue("Attraction");
 	}
 	
-	public String viewAttraction() {
-		return doneAttraction.getTagName();
+	public void clickButtonSubmit1() {
+		clicksubmit.click();
 	}
 	
-	public void selectDivisi2() {
-		Select select = new Select(chooseRentCar);
-		select.selectByValue("Rent Car");
+	public String getRequiredNamaShift() {
+		return nameShiftRequired.getTagName();
 	}
 	
-	public String viewRentCar() {
-		return doneRentCar.getTagName();
+	public void clickButtonNameShiftNamaShift() {
+		clickNameShift.click();
 	}
 	
-	public void selectDivisi3() {
-		Select select = new Select(chooseCallCenter);
-		select.selectByValue("Call Center");
+	public void selectNamaShift() {
+		clicNonShift.click();
 	}
 	
-	public String viewTipeShift() {
-		return showTipeShift.getText();
+	public String getNonShift() {
+		return viewNonShift.getTagName();
 	}
-			
+
 }

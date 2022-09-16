@@ -33,7 +33,7 @@ public class TestUploadFile {
 
 	@And("Staff enter own nik and passwordD1")
 	public void staff_enter_own_nik_and_passwordD1() {
-		uploadFotoPage.staffGoLogin("D6190873", "2001-07-21");
+		uploadFotoPage.staffGoLogin("D6200927", "1997-10-23");
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "Staff enter own nik and passwordD1");
 	}
@@ -84,7 +84,7 @@ public class TestUploadFile {
 
 	@Then("image not shown")
 	public void image_not_shown() {
-		assertEquals(uploadFotoPage.imageNotShown(), "true");
+		assertEquals(uploadFotoPage.imageNotShown(), "img");
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "Staff get attributeD1");
 	}
@@ -96,5 +96,12 @@ public class TestUploadFile {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scroll(350,0)", "");
 		extentest.log(LogStatus.PASS, "Staff choose file2");
+	}
+	
+	@Then("image preview")
+	public void image_preview() {
+		assertEquals(uploadFotoPage.imageShown(), "img");
+		HooksTMSAStaff.delay(2);
+		extentest.log(LogStatus.PASS, "image preview");
 	}
 }

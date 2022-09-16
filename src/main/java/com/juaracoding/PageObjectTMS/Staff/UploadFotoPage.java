@@ -47,6 +47,9 @@ public class UploadFotoPage {
 	@FindBy(xpath = "//input[@id='file']")
 	private WebElement upload2;
 	
+	@FindBy(xpath = "//*[@id=\"previewing\"]")
+	private WebElement imgShown;
+	
 	public void staffGoLogin(String nik, String password) {
 		this.inputNIK.sendKeys(nik);
 		this.inputPassword.sendKeys(password);
@@ -77,11 +80,15 @@ public class UploadFotoPage {
 	}
 	
 	public String imageNotShown() {
-		return imgNotShown.getAttribute("noimage.png");
+		return imgNotShown.getTagName();
 	}
 	
 	public void getFile2(String img) {
 		this.upload2.sendKeys(img);
+	}
+	
+	public String imageShown() {
+		return imgShown.getTagName();
 	}
 
 }

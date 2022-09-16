@@ -94,7 +94,7 @@ public class AbsenIzinPage {
 	}
 	
 	public String getButtonSubmit() {
-		return getBtnSubmit.getAttribute("btn btn-primary");
+		return getBtnSubmit.getTagName();
 	}
 	
 

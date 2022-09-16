@@ -33,7 +33,7 @@ public class TestAbsenIzin {
 	
 	@And("Staff enter own nik and passwordC1")
 	public void staff_enter_own_nik_and_passwordc1() {
-		absenIzinPage.staffLogin("D6190873", "2001-07-21");
+		absenIzinPage.staffLogin("D6200927", "1997-10-23");
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "Staff enter own nik and passwordC1");
 	}
@@ -101,7 +101,7 @@ public class TestAbsenIzin {
 	
 	@Then("Staff see button submit")
 	public void staff_see_button_submit() {
-		assertEquals(absenIzinPage.getButtonSubmit(), "true");
+		assertEquals(absenIzinPage.getButtonSubmit(), "input");
 		extentest.log(LogStatus.PASS, "Staff see button submit");
 	}
 }
