@@ -24,45 +24,45 @@ public class TestAbsenMasuk {
 		driver = HooksTMSAStaff.driver;
 		extentest = HooksTMSAStaff.extentTest;
 	}
-	@Given("staff login website")
+	@Given("Staff login website")
 		public void staff_login_website() {
 		driver.get(Constants.URL);
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "staff login website");
 	}
-	@When("input username and password")
+	@When("Input username and password")
 	public void input_username_and_password() {
 		HooksTMSAStaff.delay(2);
 		absenmasuk.Inputnik("D6190873");
 		absenmasuk.Inputpassword("2001-07-21");
 		extentest.log(LogStatus.PASS, "input username and password");
 	}
-	@And ("klik button login")
+	@And ("Klik button login")
 	public void klik_button_login() {
 		HooksTMSAStaff.delay(2);
 		absenmasuk.btnsubmit();
 		extentest.log(LogStatus.PASS, "klik button login");
 	}
-	@Then ("staff valid login")
+	@Then ("Staff valid login")
 	public void Staff_valid_login() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.GetDashboard();
 		assertEquals(absenmasuk.GetDashboard(), "Dashboard");
 		extentest.log(LogStatus.PASS, "staff valid login");
 	}
-	@When("staff click on tab laporan kegiatan")
+	@When("Staff click on tab laporan kegiatan")
 	public void staff_click_on_tab_laporan_kegiatan() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.btnlaporan();
 		extentest.log(LogStatus.PASS, "staff click on tab laporan kegiatan");
 	}
-	@And("click on absen masuk")
+	@And("Click on absen masuk")
 	public void click_on_absen_masuk() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.btnmasuk();
 		extentest.log(LogStatus.PASS, "click on absen masuk");
 	}
-	@Then("staff valid on tab absen masuk")
+	@Then("Staff valid on tab absen masuk")
 	public void staff_valid_on_tab_absen_masuk() {
 		HooksTMSAStaff.delay(3);
 		absenmasuk.GetDashboard();
@@ -114,4 +114,72 @@ public class TestAbsenMasuk {
 		assertEquals(absenmasuk.alert(), "Input Result");
 		extentest.log(LogStatus.PASS, "Click Submit");
 	}
+	
+	// absen pulang
+
+	@When("Staff click on tab laporan kegiatan Two")
+	public void staff_click_on_tab_laporan_kegiatan_Two() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.Inputlaporan();
+		extentest.log(LogStatus.PASS, "staff click on tab laporan kegiatan");
+	}
+	@And("Click on absen pulang")
+	public void click_on_absen_pulang() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.btnpulang();
+		extentest.log(LogStatus.PASS, "click on absen pulang");
+	}
+	@When("Staff valid on tab absen pulang")
+	public void staff_valid_on_tab_absen_pulang() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.GetDashboard();
+		assertEquals(absenmasuk.GetDashboard(), "Absen Pulang");
+		extentest.log(LogStatus.PASS, "Absen Pulang");
+	}
+	@And("Staff Input Upload Foto Selfie pulang")
+	public void Staff_Input_Upload_Foto_Selfie_pulang() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.btnfile2();
+		extentest.log(LogStatus.PASS, "Staff Input Upload Foto Selfie");
+	}
+	@And("Staff Select Divisi pulang")
+	public void Staff_Select_Divisi_pulang() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.Inputdivisi("Call Center");;
+		extentest.log(LogStatus.PASS, "Staff Select Divisi");
+	}
+	@And("Staff Select Tipe Shift pulang")
+	public void Staff_Select_Tipe_Shift_pulang() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.Inputshift("Call Center 1");
+		HooksTMSAStaff.scroll(300);
+		extentest.log(LogStatus.PASS, "Staff Select Shift");
+	}
+	@And("Staff Select Nama Shift pulang")
+	public void Staff_Select_Nama_Shift_pulang() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.Inputnamashift();
+		extentest.log(LogStatus.PASS, "Staff Select Nama Shift");
+	}
+	@And("Staff select Tipe Absen pulang")
+	public void Staff_select_Tipe_Absen_pulang() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.Inputtipe("WFH");
+		extentest.log(LogStatus.PASS, "Staff Select Tipe Absen");
+	}
+	@And("Staff Input Keterangan Pulang")
+	public void Staff_Input_Keterangan_Pulang() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.Inputketerangan();
+		extentest.log(LogStatus.PASS, "Staff Select Tipe Absen");
+	}
+	@Then ("Click submit")
+	public void Click_submit_pulang() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.inputsubmit();
+		HooksTMSAStaff.delay(3);
+		assertEquals(absenmasuk.Inputalert(), "Input Result");
+		extentest.log(LogStatus.PASS, "Click Submit");
+	}
+
 }
