@@ -86,4 +86,5 @@ public class LogOutStaffTMSPage {
 	public String getPageSign2() {
 		return getTxtDIKA2.getText();
 	}
+	
 }

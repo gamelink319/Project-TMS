@@ -104,4 +104,5 @@ public class TestAbsenIzin {
 		assertEquals(absenIzinPage.getButtonSubmit(), "input");
 		extentest.log(LogStatus.PASS, "Staff see button submit");
 	}
+	
 }

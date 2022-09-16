@@ -115,5 +115,4 @@ public class TestSelectTipeShift {
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "Tipe shift has choosenE6");
 	}
-
 }

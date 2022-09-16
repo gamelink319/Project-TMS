@@ -46,6 +46,6 @@ Feature: Staff choose nama shift
 	Scenario: Staff senin middle 
 		When Staff senin middle
 		And Staff choose non shiftG7
-		Then Nama shift has choosenG7
+		Then Nama shift has choosenG7 
 
  

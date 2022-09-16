@@ -11,7 +11,6 @@ import io.cucumber.testng.CucumberOptions;
 public class TestRunnerTMSAStaff extends AbstractTestNGCucumberTests {
 
 }
-
 // src/test/resources/features/Staff/01.LoginStaff.feature
 // src/test/resources/features/Staff/02.LogoutStaff.feature
 // src/test/resources/features/Staff/03.AbsenIzin.feature

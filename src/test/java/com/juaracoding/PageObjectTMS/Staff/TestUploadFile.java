@@ -104,4 +104,5 @@ public class TestUploadFile {
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "image preview");
 	}
+	
 }

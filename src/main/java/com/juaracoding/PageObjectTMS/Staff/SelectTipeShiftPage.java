@@ -107,4 +107,5 @@ public class SelectTipeShiftPage {
 	public String viewCallCenter2() {
 		return showCalCenter2.getTagName();
 	}
+	
 }

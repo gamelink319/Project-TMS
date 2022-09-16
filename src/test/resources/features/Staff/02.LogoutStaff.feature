@@ -15,5 +15,6 @@ Feature: Logout Staff
     And Staff click profil
     And Staff click logout pada profil
     Then Staff masuk ke halaman sign inB2
+    
 
    

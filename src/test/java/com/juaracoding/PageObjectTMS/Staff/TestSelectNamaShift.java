@@ -187,5 +187,4 @@ public class TestSelectNamaShift {
 		assertEquals(selectNamaShiftPage.getNonShift5(), "div");
 		extentest.log(LogStatus.PASS, "Nama shift has choosenG6");
 	}
-
 }

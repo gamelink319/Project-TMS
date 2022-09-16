@@ -20,7 +20,7 @@ Feature: As call center choose tipe shift
 	@tag3
 	Scenario: Staff select call center2
 		When Staff click call center2
-		Then Tipe shift has choosenE6
+		Then Tipe shift has choosenE6 
 		
 	
 

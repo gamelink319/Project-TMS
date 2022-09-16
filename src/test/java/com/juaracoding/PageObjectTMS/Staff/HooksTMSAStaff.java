@@ -66,5 +66,6 @@ public class HooksTMSAStaff {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scroll(0," + vertical + ")");
 	}
+	
 
 }

@@ -21,7 +21,7 @@ Feature: Login Staff
     And Staff click button loginA3
     Then Staff invalid loginA3
         
-  @tag3
+  @tag4
   Scenario: Staff valid login
   	When Staff go to web ptdikaA4
     And Staff enter NIK password valid

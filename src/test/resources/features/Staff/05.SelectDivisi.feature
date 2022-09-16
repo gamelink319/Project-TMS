@@ -24,7 +24,7 @@ Feature: Staff choose divisi
 	@tag4
 	Scenario: Staff select call center
 		When Staff choose call center
-		Then Division has choosen and showing tipe shift
+		Then Division has choosen and showing tipe shift 
 		
 	
 		

@@ -129,5 +129,4 @@ public class TestStaffLoginTMS {
 		assertEquals(testLoginStaffTMS.getDashboard(), "Dashboard");
 		extentest.log(LogStatus.PASS, "Staff valid login");
 	}
-
 }

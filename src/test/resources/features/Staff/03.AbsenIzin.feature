@@ -29,7 +29,7 @@ Feature: Absen Izin
 	Scenario: Staff showing text area keterangan
 		Then Staff see text area keterangan
 		
-	@tag6
+	@tag7
 	Scenario: Staff showing button submit
 		Then Staff see button submit
      

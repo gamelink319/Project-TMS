@@ -20,6 +20,7 @@ Feature: Staff select upload foto
   	When Staff choose file2
   	Then image preview
   	
+  	
 
   
 

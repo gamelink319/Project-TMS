@@ -91,6 +91,5 @@ public class TestStaffLogOutTMS {
 		assertEquals(logoutStaffTMSPage.getPageSign2(), "DIKA");
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "Staff masuk ke halaman sign inB2");
-	}
-	
+	}	
 }

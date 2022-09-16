@@ -114,5 +114,6 @@ public class SelectDivisiPage {
 	public String viewTipeShift() {
 		return showTipeShift.getText();
 	}
+	
 			
 }

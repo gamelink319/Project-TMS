@@ -182,5 +182,6 @@ public class SelectNamaShiftPage {
 	public String getNonShift5() {
 		return viewSeninPagi.getTagName();
 	}
+	
 
 }

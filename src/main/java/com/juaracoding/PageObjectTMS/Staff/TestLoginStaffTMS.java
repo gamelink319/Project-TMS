@@ -107,5 +107,4 @@ public class TestLoginStaffTMS {
 	public String getDashboard() {
 		return getTxtDashboard.getText();
 	}
-
 }

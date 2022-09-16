@@ -123,4 +123,5 @@ public class TestSelectDivisi {
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "Division has choosen and showing tipe shift");
 	}
+	
 }

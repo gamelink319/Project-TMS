@@ -90,5 +90,4 @@ public class UploadFotoPage {
 	public String imageShown() {
 		return imgShown.getTagName();
 	}
-
 }
