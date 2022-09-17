@@ -480,4 +480,5 @@ public class TestLaporanKegiatanStaffTMS {
 		HooksTMSAStaff.delay(2);
 		extentest.log(LogStatus.PASS, "Staff click logout pada profil");
 	}
+	
 }
