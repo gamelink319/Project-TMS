@@ -6,7 +6,7 @@
       <class name="com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="6"/>
+          <include name="runScenario" invocation-numbers="0 1 2 11 12 14 18 21 29 32 34 35"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff -->
