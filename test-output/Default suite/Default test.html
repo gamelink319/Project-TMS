@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>23/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 15 21:03:16 WIB 2022</td>
+<td>Started on:</td><td>Sun Sep 18 01:17:58 WIB 2022</td>
 </tr>
-<tr><td>Total time:</td><td>335 seconds (335398 ms)</td>
+<tr><td>Total time:</td><td>52 seconds (52298 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,53 +75,27 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting end date lebih dari 1bulan dari start date", "Scenario Admin Absen Masuk"</td>
-<td><div><pre>java.lang.AssertionError: expected [Tidak Ada Data] but found [Maximal Penarikan Data adalah 1 Bulan / 31 Hari !!!]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.juaracoding.PageObjectTMS.Admin.ReportTMSAdmin.Admin_validate_tidak_ada_data(ReportTMSAdmin.java:198)
-	at ✽.Admin validate tidak ada data(file:///C:/Users/Xh/eclipse-workspace/com.juaracoding.PageObjectTMS/src/test/resources/features/Admin/TMSAdminNonShifting.feature:121)
-</pre></div><a href='#' onClick='toggleBox("stack-trace570017514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace570017514'><pre>java.lang.AssertionError: expected [Tidak Ada Data] but found [Maximal Penarikan Data adalah 1 Bulan / 31 Hari !!!]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.juaracoding.PageObjectTMS.Admin.ReportTMSAdmin.Admin_validate_tidak_ada_data(ReportTMSAdmin.java:198)
-	at ✽.Admin validate tidak ada data(file:///C:/Users/Xh/eclipse-workspace/com.juaracoding.PageObjectTMS/src/test/resources/features/Admin/TMSAdminNonShifting.feature:121)
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff input data form absen off", "Scenario Staff Absen Off"</td>
+<td><div><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-B1NGKO38&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)
+	at com.juaracoding.PageObjectTMS.Staff.AbsenOffStaff.btnnamashift(AbsenOffStaff.java:109)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.Staff_Select_Nama_Shift(TestAbsenOff.java:94)
+	at ?.Choose Nama Shift(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1254907391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1254907391'><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-B1NGKO38&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)
+	at com.juaracoding.PageObjectTMS.Staff.AbsenOffStaff.btnnamashift(AbsenOffStaff.java:109)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.Staff_Select_Nama_Shift(TestAbsenOff.java:94)
+	at ?.Choose Nama Shift(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:18)
 </pre></div></td>
-<td>9</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting start date lebih dari 1bulan dari end date", "Scenario Admin Absen Masuk"</td>
-<td><div><pre>java.lang.AssertionError: expected [Tidak Ada Data] but found [Maximal Penarikan Data adalah 1 Bulan / 31 Hari !!!]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.juaracoding.PageObjectTMS.Admin.ReportTMSAdmin.Admin_validate_tidak_ada_data(ReportTMSAdmin.java:198)
-	at ✽.Admin validate tidak ada data(file:///C:/Users/Xh/eclipse-workspace/com.juaracoding.PageObjectTMS/src/test/resources/features/Admin/TMSAdminNonShifting.feature:107)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1667859935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1667859935'><pre>java.lang.AssertionError: expected [Tidak Ada Data] but found [Maximal Penarikan Data adalah 1 Bulan / 31 Hari !!!]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.juaracoding.PageObjectTMS.Admin.ReportTMSAdmin.Admin_validate_tidak_ada_data(ReportTMSAdmin.java:198)
-	at ✽.Admin validate tidak ada data(file:///C:/Users/Xh/eclipse-workspace/com.juaracoding.PageObjectTMS/src/test/resources/features/Admin/TMSAdminNonShifting.feature:107)
-</pre></div></td>
-<td>9</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
+<td>12</td>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -131,120 +105,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin valid login", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>10</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting position spg", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting branch bandung", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting end date lebih rendah dari start date", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>13</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting branch surabaya", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting unit bca api", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting branch it programmer", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>20</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting unit all", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>20</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting position null", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting branch null", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting unit airasia", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting end date true", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>15</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting position call center", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting unit null", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting position admin credit", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>12</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting brach all", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>21</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin Select Absen from dashboard", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>1</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin Logout", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>2</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin Checking file", "Scenario Admin Absen Masuk"</td>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff logout website", "Scenario Staff Absen Off"</td>
 <td></td>
 <td>3</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
 <tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting branch jakarta", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>20</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting start date lebih tinggi dari end date", "Scenario Admin Absen Masuk"</td>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff Choose form absen off", "Scenario Staff Absen Off"</td>
 <td></td>
 <td>13</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
 <tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting Position all", "Scenario Admin Absen Masuk"</td>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff Login Website", "Scenario Staff Absen Off"</td>
 <td></td>
-<td>20</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
-<tr>
-<td title='com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin input form absen non shifting start date true", "Scenario Admin Absen Masuk"</td>
-<td></td>
-<td>21</td>
-<td>com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin@61df66b6</td></tr>
+<td>16</td>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
 </table><p>
 </body>
 </html>
