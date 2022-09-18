@@ -5,10 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(tags ="",
-			features = {"src/test/resources/features/Admin/TMSAdminNonShifting.feature"},
+			features = {"src/test/resources/features/Admin/ModulAdminReportAbsen.feature"},
 				glue ="com.juaracoding.PageObjectTMS.Admin",
-				plugin={"pretty","html:target/CucumberAdminReportNonShifting-reports.html",
-						"json:target/extentAdminReportNonShifting-reports.html"})
+				plugin={"pretty","html:target/CucumberAdminReportAbsen-reports.html",
+						"json:target/extentAdminReportAbsen-reports.html"})
 public class TestRunnerTMSAdmin extends AbstractTestNGCucumberTests {
 }
 

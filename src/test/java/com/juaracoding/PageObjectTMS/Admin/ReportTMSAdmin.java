@@ -22,7 +22,7 @@ public class ReportTMSAdmin {
 	private AdminReportAbsen reportAbsen = new AdminReportAbsen();
 	private FormAdminReportAbsen formAbsen = new FormAdminReportAbsen();
 	private static ExtentTest extentTest;
-	String x;
+
 
 	public ReportTMSAdmin() {
 		driver = HooksTMSAdmin.driver;
@@ -210,7 +210,7 @@ public class ReportTMSAdmin {
 		System.out.println(TxtAlert);
 		assertEquals(TxtAlert, "Maximal Penarikan Data adalah 1 Bulan / 31 Hari !!!");
 		driver.switchTo().alert().accept();
-		extentTest.log(LogStatus.PASS, "Admin validate wrong input date");
+		extentTest.log(LogStatus.FAIL, "Admin validate wrong input date");
 	}
 
 	@When("Admin select position null")
