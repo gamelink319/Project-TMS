@@ -167,5 +167,53 @@ public class TestAbsenMasuk {
 		absenmasuk.Inputketerangan();
 		extentest.log(LogStatus.PASS, "Staff Select Keterangan Pulang");
 	}
-
+	@When("Staff Input Upload Foto Selfie Null")
+	public void Staff_Input_Upload_Foto_Selfie_Null() {
+		HooksTMSAStaff.delay(3);
+		System.out.println("Selfie Null");
+		extentest.log(LogStatus.PASS, "Staff Input Upload Foto Selfie Null");
+	}
+	@And("Staff Select Divisi Null")
+	public void Staff_Select_Divisi_Null() {
+		HooksTMSAStaff.delay(3);
+		System.out.println("Divisi Null");
+		extentest.log(LogStatus.PASS, "Staff Select Divisi Null");
+	}
+	@And("Staff Select Tipe Shift Null ")
+	public void Staff_Tipe_Shift_Null() {
+		HooksTMSAStaff.delay(3);
+		System.out.println("Tipe Shift Null");
+		extentest.log(LogStatus.PASS, "Staff Select Tipe Shift Null");
+	}
+	@And("Staff Select Nama Shift Null")
+	public void Staff_Select_tipe_Shift_Null() {
+		HooksTMSAStaff.delay(3);
+		System.out.println("Nama Shift Null");
+		extentest.log(LogStatus.PASS, "Staff Select Nama Shift Null");
+	}
+	@And("Staff Select Tipe Absen Null")
+	public void Staff_Select_tipe_Absen_Null() {
+		HooksTMSAStaff.delay(3);
+		System.out.println("Tipe Absen Null");
+		extentest.log(LogStatus.PASS, "Staff Select Tipe Absen Null");
+	}
+	@And("Staff Input Keterangan Null")
+	public void Staff_Select_Input_Keterangan_Null() {
+		HooksTMSAStaff.delay(3);
+		System.out.println("Input Keterangan Null");
+		extentest.log(LogStatus.PASS, "Staff Input Keterangan Null");
+	}
+	@Then("Click Submit FAIL")
+	public void Click_Submit_FAIL() {
+		HooksTMSAStaff.delay(3);
+		absenmasuk.submit();
+		assertEquals(absenmasuk.alert(), "Field * harus diisi");
+		extentest.log(LogStatus.FAIL, "Click Submit FAIL");
+	}
+	@And("Refresh Page")
+	public void Refresh_Page() {
+		HooksTMSAStaff.delay(2);
+		driver.navigate().refresh();
+		extentest.log(LogStatus.PASS, "Refresh Page");
+	}
 }

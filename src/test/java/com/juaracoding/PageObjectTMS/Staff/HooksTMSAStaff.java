@@ -57,7 +57,7 @@ public class HooksTMSAStaff {
 			Thread.sleep(1000 * detik);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-			System.out.println(e);
+//			System.out.println(e);
 		}
 
 	}

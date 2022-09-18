@@ -11,12 +11,73 @@ Feature: Login User
 	And Click On Absen Masuk
 	Then Staff Valid On Tab Absen Masuk
 	
+	
+	Scenario: Input Form Absen Masuk Selfie Null
+	When Staff Input Upload Foto Selfie Null
+	And Staff Select Divisi 
+	And Staff Select Tipe Shift 
+	And Staff Select Nama Shift 
+	And Staff select Tipe Absen 
+	And Staff Input Keterangan 
+	Then Click Submit FAIL
+	And Refresh Page
+	
+	Scenario: Input Form Absen Masuk Divisi Null
+	When Staff Input Upload Foto Selfie 
+	And Staff Select Divisi Null
+	And Staff Select Tipe Shift 
+	And Staff Select Nama Shift 
+	And Staff select Tipe Absen 
+	And Staff Input Keterangan 
+	Then Click Submit FAIL
+	And Refresh Page
+	
+		Scenario: Input Form Absen Masuk Tipe Shift Null
+	When Staff Input Upload Foto Selfie 
+	And Staff Select Divisi 
+	And Staff Select Tipe Shift Null 
+	And Staff Select Nama Shift 
+	And Staff select Tipe Absen 
+	And Staff Input Keterangan 
+	Then Click Submit FAIL
+	And Refresh Page
+	
+		Scenario: Input Form Absen Masuk Nama Shift Null
+	When Staff Input Upload Foto Selfie 
+	And Staff Select Divisi 
+	And Staff Select Tipe Shift 
+	And Staff Select Nama Shift Null 
+	And Staff select Tipe Absen 
+	And Staff Input Keterangan 
+	Then Click Submit FAIL
+	And Refresh Page
+	
+		Scenario: Input Form Absen Masuk Tipe Absen Null
+	When Staff Input Upload Foto Selfie 
+	And Staff Select Divisi 
+	And Staff Select Tipe Shift 
+	And Staff Select Nama Shift 
+	And Staff select Tipe Absen Null 
+	And Staff Input Keterangan 
+	Then Click Submit FAIL
+	And Refresh Page
+	
+		Scenario: Input Form Absen Masuk Keterangan Null
+	When Staff Input Upload Foto Selfie 
+	And Staff Select Divisi 
+	And Staff Select Tipe Shift 
+	And Staff Select Nama Shift 
+	And Staff Select Tipe Absen 
+	And Staff Input Keterangan Null 
+	Then Click Submit FAIL
+	And Refresh Page
+	
 	Scenario: Input Form Absen Masuk 
 	When Staff Input Upload Foto Selfie
 	And Staff Select Divisi
 	And Staff Select Tipe Shift
 	And Staff Select Nama Shift
-	And Staff select Tipe Absen
+	And Staff Select Tipe Absen
 	And Staff Input Keterangan
 	Then Click Submit
 
