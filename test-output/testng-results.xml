@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="36" passed="24" failed="12" skipped="0">
+<testng-results ignored="0" total="38" passed="26" failed="12" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-17T20:08:03 WIB" name="Default suite" finished-at="2022-09-17T20:11:15 WIB" duration-ms="192286">
+  <suite started-at="2022-09-18T03:20:36 WIB" name="Default suite" finished-at="2022-09-18T03:24:05 WIB" duration-ms="208595">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-17T20:08:03 WIB" name="Default test" finished-at="2022-09-17T20:11:15 WIB" duration-ms="192286">
+    <test started-at="2022-09-18T03:20:36 WIB" name="Default test" finished-at="2022-09-18T03:24:05 WIB" duration-ms="208595">
       <class name="com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:03 WIB" name="setUpClass" finished-at="2022-09-17T20:08:04 WIB" duration-ms="970" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:20:36 WIB" name="setUpClass" finished-at="2022-09-18T03:20:37 WIB" duration-ms="578" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5d5c41e5]]>
+                <![CDATA[org.testng.TestRunner@1df5c7e3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:04 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:16 WIB" duration-ms="11846" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:20:37 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:20:46 WIB" duration-ms="9144" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -46,15 +46,15 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.staff_invalid_login1(TestLaporanKegiatanStaffTMS.java:70)
-at ✽.Staff invalid loginA1(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:8)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.staff_invalid_login1(TestLaporanTMS.java:70)
+at ✽.Staff invalid loginA1(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:8)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:16 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:21 WIB" duration-ms="5182" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:20:46 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:20:50 WIB" duration-ms="4757" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -79,15 +79,15 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.staff_invalid_login2(TestLaporanKegiatanStaffTMS.java:77)
-at ✽.Staff invalid loginA2(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:15)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.staff_invalid_login2(TestLaporanTMS.java:77)
+at ✽.Staff invalid loginA2(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:15)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:21 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:26 WIB" duration-ms="5412" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:20:50 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:20:55 WIB" duration-ms="4920" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -114,15 +114,15 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.staff_invalid_login3(TestLaporanKegiatanStaffTMS.java:84)
-at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:22)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.staff_invalid_login3(TestLaporanTMS.java:84)
+at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:22)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:26 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:37 WIB" duration-ms="10590" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:20:55 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:12 WIB" duration-ms="16357" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -138,7 +138,7 @@ at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:37 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:50 WIB" duration-ms="12940" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:12 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:21 WIB" duration-ms="8943" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,7 +154,7 @@ at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:50 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:52 WIB" duration-ms="2146" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:21 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:23 WIB" duration-ms="2082" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -170,7 +170,7 @@ at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:52 WIB" duration-ms="129" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:23 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:25 WIB" duration-ms="2085" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,7 +186,7 @@ at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:52 WIB" duration-ms="110" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:25 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:25 WIB" duration-ms="64" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -202,7 +202,7 @@ at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:52 WIB" duration-ms="102" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:25 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:25 WIB" duration-ms="69" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,7 +218,7 @@ at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:52 WIB" duration-ms="92" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:25 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:25 WIB" duration-ms="65" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,7 +234,7 @@ at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:52 WIB" duration-ms="70" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:25 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:25 WIB" duration-ms="56" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -250,7 +250,7 @@ at ✽.Staff invalid loginA3(file:///C:/Users/girangsnm/git/Project-TMS/src/test
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:53 WIB" duration-ms="389" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:25 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:27 WIB" duration-ms="2260" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -275,15 +275,15 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.staff_get_required_from_btn_choose_file(TestLaporanKegiatanStaffTMS.java:162)
-at ✽.Staff get required from btn choose file(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:64)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.staff_get_required_from_btn_choose_file(TestLaporanTMS.java:165)
+at ✽.Staff get required from btn choose file(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:64)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:53 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:55 WIB" duration-ms="2384" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:27 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:30 WIB" duration-ms="2275" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -308,15 +308,15 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.image_not_shown(TestLaporanKegiatanStaffTMS.java:178)
-at ✽.image not shown(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:69)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.image_not_shown(TestLaporanTMS.java:181)
+at ✽.image not shown(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:69)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:55 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:59 WIB" duration-ms="4127" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:30 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:34 WIB" duration-ms="4104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -332,7 +332,7 @@ at ✽.image not shown(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resou
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:59 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:08:59 WIB" duration-ms="227" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:34 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:36 WIB" duration-ms="2143" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -407,7 +407,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:08:59 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:04 WIB" duration-ms="4255" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:40 WIB" duration-ms="4202" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -423,7 +423,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:04 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:08 WIB" duration-ms="4216" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:40 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:44 WIB" duration-ms="4172" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -439,7 +439,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:08 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:12 WIB" duration-ms="4215" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:44 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:48 WIB" duration-ms="4157" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -455,7 +455,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:12 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:13 WIB" duration-ms="368" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:48 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:51 WIB" duration-ms="2262" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -480,15 +480,15 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.staff_get_alert_from_select_box_tipe_shift(TestLaporanKegiatanStaffTMS.java:250)
-at ✽.Staff get alert from select box tipe shift(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:99)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.staff_get_alert_from_select_box_tipe_shift(TestLaporanTMS.java:253)
+at ✽.Staff get alert from select box tipe shift(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:99)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:13 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:17 WIB" duration-ms="4203" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:51 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:55 WIB" duration-ms="4152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -504,7 +504,7 @@ at ✽.Staff get alert from select box tipe shift(file:///C:/Users/girangsnm/git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:17 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:21 WIB" duration-ms="4195" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:55 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:21:59 WIB" duration-ms="4146" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -520,7 +520,7 @@ at ✽.Staff get alert from select box tipe shift(file:///C:/Users/girangsnm/git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:21 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:23 WIB" duration-ms="2476" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:21:59 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:03 WIB" duration-ms="4362" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -545,15 +545,15 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.staff_get_stack_name_shift(TestLaporanKegiatanStaffTMS.java:284)
-at ✽.Staff get stack name shift(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:115)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.staff_get_stack_name_shift(TestLaporanTMS.java:288)
+at ✽.Staff get stack name shift(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:115)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:23 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:28 WIB" duration-ms="4257" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:10 WIB" duration-ms="6181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -569,7 +569,7 @@ at ✽.Staff get stack name shift(file:///C:/Users/girangsnm/git/Project-TMS/src
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:28 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:32 WIB" duration-ms="4195" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:10 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:16 WIB" duration-ms="6174" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -585,7 +585,7 @@ at ✽.Staff get stack name shift(file:///C:/Users/girangsnm/git/Project-TMS/src
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:32 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:36 WIB" duration-ms="4223" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:16 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:22 WIB" duration-ms="6179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -601,7 +601,7 @@ at ✽.Staff get stack name shift(file:///C:/Users/girangsnm/git/Project-TMS/src
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:40 WIB" duration-ms="4200" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:22 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:28 WIB" duration-ms="6181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -617,7 +617,7 @@ at ✽.Staff get stack name shift(file:///C:/Users/girangsnm/git/Project-TMS/src
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:40 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:44 WIB" duration-ms="4206" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:28 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:34 WIB" duration-ms="6176" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -633,7 +633,7 @@ at ✽.Staff get stack name shift(file:///C:/Users/girangsnm/git/Project-TMS/src
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:44 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:49 WIB" duration-ms="4201" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:34 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:40 WIB" duration-ms="6164" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -649,7 +649,7 @@ at ✽.Staff get stack name shift(file:///C:/Users/girangsnm/git/Project-TMS/src
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:49 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:53 WIB" duration-ms="4193" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:40 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:47 WIB" duration-ms="6161" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -665,7 +665,7 @@ at ✽.Staff get stack name shift(file:///C:/Users/girangsnm/git/Project-TMS/src
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:53 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:53 WIB" duration-ms="353" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:47 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:49 WIB" duration-ms="2253" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -690,15 +690,15 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.staff_get_required_from_select_box_tipe_absen(TestLaporanKegiatanStaffTMS.java:388)
-at ✽.Staff get required from select box tipe absen(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:162)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.staff_get_required_from_select_box_tipe_absen(TestLaporanTMS.java:400)
+at ✽.Staff get required from select box tipe absen(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:162)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:53 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:09:57 WIB" duration-ms="4194" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:49 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:53 WIB" duration-ms="4155" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -714,7 +714,7 @@ at ✽.Staff get required from select box tipe absen(file:///C:/Users/girangsnm/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:09:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:10:02 WIB" duration-ms="4179" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:53 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:57 WIB" duration-ms="4149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -730,7 +730,7 @@ at ✽.Staff get required from select box tipe absen(file:///C:/Users/girangsnm/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:10:02 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:10:02 WIB" duration-ms="357" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:22:59 WIB" duration-ms="2248" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -755,15 +755,15 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.staff_get_required_from_text_area(TestLaporanKegiatanStaffTMS.java:423)
-at ✽.Staff get required from text area(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:177)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.staff_get_required_from_text_area(TestLaporanTMS.java:435)
+at ✽.Staff get required from text area(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:177)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:10:02 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:10:06 WIB" duration-ms="4313" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:22:59 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:23:04 WIB" duration-ms="4239" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -779,7 +779,7 @@ at ✽.Staff get required from text area(file:///C:/Users/girangsnm/git/Project-
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:10:06 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:10:46 WIB" duration-ms="40141" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:23:04 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:23:11 WIB" duration-ms="6999" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -803,15 +803,15 @@ at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:617)
-at com.juaracoding.PageObjectTMS.Staff.TestLaporanKegiatanStaffTMS.get_warning_sentence(TestLaporanKegiatanStaffTMS.java:444)
-at ✽.Get warning sentence(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.LaporanKegiatanStaff.feature:188)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.get_warning_sentence(TestLaporanTMS.java:456)
+at ✽.Get warning sentence(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:188)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:10:46 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-17T20:11:09 WIB" duration-ms="22865" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:23:11 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:23:46 WIB" duration-ms="34919" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -824,69 +824,86 @@ at ✽.Get warning sentence(file:///C:/Users/girangsnm/git/Project-TMS/src/test/
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[The step 'Staff clik' is undefined.
-You can implement this step using the snippet(s) below:
-
-@When("Staff clik")
-public void staff_clik() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/p"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIRANGSNM', ip: '192.168.43.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\GIRANG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef80852b1543642d7fe0c03d070f429c
+*** Element info: {Using=xpath, value=/html/body/p}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Staff clik' is undefined.
-You can implement this step using the snippet(s) below:
-
-@When("Staff clik")
-public void staff_clik() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/p"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIRANGSNM', ip: '192.168.43.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\GIRANG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef80852b1543642d7fe0c03d070f429c
+*** Element info: {Using=xpath, value=/html/body/p}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+at com.juaracoding.PageObjectTMS.Staff.LaporanPage.dataFailedTosend(LaporanPage.java:474)
+at com.juaracoding.PageObjectTMS.Staff.TestLaporanTMS.success_input_data(TestLaporanTMS.java:463)
+at ✽.Success input data(file:///C:/Users/girangsnm/git/Project-TMS/src/test/resources/features/Staff/01.%20LaporanKegiatan.feature:204)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-17T20:11:09 WIB" name="tearDownClass" finished-at="2022-09-17T20:11:15 WIB" duration-ms="5617" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:23:46 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:23:50 WIB" duration-ms="4359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Staff valid logout from navbar"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Staff"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:23:50 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T03:23:59 WIB" duration-ms="9196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Staff valid logout from profil"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Staff"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@61df66b6]" started-at="2022-09-18T03:23:59 WIB" name="tearDownClass" finished-at="2022-09-18T03:24:05 WIB" duration-ms="5413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

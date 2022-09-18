@@ -39,9 +39,7 @@ public enum TestScenario {
 	T35("Data not received"),
 	T36("Data sent successfully"),
 	T37("Staff valid logout from navbar"),
-	T38("Staff valid logout from profil");
-	
-	
+	T38("Staff valid logout from profil");	
 	
 	private String testTMS;
 	
