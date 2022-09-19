@@ -52,7 +52,7 @@ public class HooksTMSAStaff {
 		DriverSingleton.CloseObjectInstance();
 	}
 
-	static void delay(int detik) {
+	public static void delay(int detik) {
 		try {
 			Thread.sleep(1000 * detik);
 		} catch (InterruptedException e) {
@@ -62,7 +62,7 @@ public class HooksTMSAStaff {
 
 	}
 
-	static void scroll(int vertical) {
+	public static void scroll(int vertical) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scroll(0," + vertical + ")");
 	}

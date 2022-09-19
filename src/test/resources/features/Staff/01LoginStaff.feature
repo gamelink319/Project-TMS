@@ -1,4 +1,0 @@
-Feature: Login Staff
-
-Scenario: 
-	

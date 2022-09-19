@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin">
+      <class name="com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="14 16 36 38 58 60 80 82 102 104 124 126"/>
+          <include name="runScenario" invocation-numbers="3 4 7"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin -->
+      </class> <!-- com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

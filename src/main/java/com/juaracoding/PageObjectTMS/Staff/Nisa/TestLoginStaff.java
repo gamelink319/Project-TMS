@@ -1,4 +1,4 @@
-package com.juaracoding.PageObjectTMS.Staff;
+package com.juaracoding.PageObjectTMS.Staff.Nisa;
 
 public class TestLoginStaff {
 	
