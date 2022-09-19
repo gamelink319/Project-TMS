@@ -33,8 +33,8 @@ public class TestAbsenOff {
 	@When("Input Username and Password")
 	public void input_username_and_password() {
 		HooksTMSAStaff.delay(3);
-		absenOffStaff.Inputnik("D6200927");
-		absenOffStaff.Inputpassword("1997-10-23");
+		absenOffStaff.Inputnik("D6200792");
+		absenOffStaff.Inputpassword("1993-12-14");
 		extentTest.log(LogStatus.PASS, "Input Username and Password");
 	}
 	@And ("Klik Btn Login")

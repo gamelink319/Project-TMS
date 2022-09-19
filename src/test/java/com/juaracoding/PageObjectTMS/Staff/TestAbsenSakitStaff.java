@@ -33,8 +33,9 @@ public class TestAbsenSakitStaff {
 	@When("Staff Input Username and Password")
 	public void Staff_Input_Username_and_Password() {
 		HooksTMSAStaff.delay(2);
-		absenSakitStaff.inputnik("D6200183");
-		absenSakitStaff.inputpassword("1995-03-27");
+		absenSakitStaff.inputnik("D6201031");
+		
+		absenSakitStaff.inputpassword("1994-10-02");
 		extentTest.log(LogStatus.PASS, "Staff Input Username and Password");
 	}
 
