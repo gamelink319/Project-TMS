@@ -22,7 +22,7 @@ import Utils.Utils;
 public class HooksTMSAStaff {
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
-	public static ExtentReports reports = new ExtentReports("target/extentStaff-reports.html");
+	public static ExtentReports reports = new ExtentReports("target/extent-reports.html");
 
 	@Before
 	public void setUP() {

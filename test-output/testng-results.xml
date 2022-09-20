@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="5" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-18T16:30:14 WIB" name="Default suite" finished-at="2022-09-18T16:31:24 WIB" duration-ms="70297">
+  <suite started-at="2022-09-20T12:37:26 WIB" name="Default suite" finished-at="2022-09-20T12:40:01 WIB" duration-ms="154801">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-18T16:30:14 WIB" name="Default test" finished-at="2022-09-18T16:31:24 WIB" duration-ms="70297">
+    <test started-at="2022-09-20T12:37:26 WIB" name="Default test" finished-at="2022-09-20T12:40:01 WIB" duration-ms="154801">
       <class name="com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-18T16:30:14 WIB" name="setUpClass" finished-at="2022-09-18T16:30:15 WIB" duration-ms="1483" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:37:26 WIB" name="setUpClass" finished-at="2022-09-20T12:37:26 WIB" duration-ms="642" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6015a4a5]]>
+                <![CDATA[org.testng.TestRunner@705a8dbc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-18T16:30:15 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T16:30:36 WIB" duration-ms="20250" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:37:26 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:37:44 WIB" duration-ms="17242" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-18T16:30:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T16:30:47 WIB" duration-ms="11432" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:37:44 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:37:56 WIB" duration-ms="12708" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-18T16:30:47 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T16:31:15 WIB" duration-ms="27851" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:37:56 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:38:01 WIB" duration-ms="4163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Staff failed upload foto"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenario Staff Absen Off"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:38:01 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:38:12 WIB" duration-ms="11476" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,14 +82,163 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.NotDivis(TestAbsenOff.java:119)
+at ✽.Not Divis(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-18T16:31:15 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T16:31:18 WIB" duration-ms="3388" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:38:12 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:38:24 WIB" duration-ms="11443" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Staff logout website"]]>
+                <![CDATA["input divisis"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenario Staff Absen Off"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [div]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [div]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.StaffNotChooseNamaShift(TestAbsenOff.java:133)
+at ✽.No Choose Nama Shift(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:38:24 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:38:38 WIB" duration-ms="14534" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["input shifts"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenario Staff Absen Off"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [] but found [null]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.Tipeabsenkosong(TestAbsenOff.java:154)
+at ✽.Tipe absen kosong(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:31)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:38:38 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:38:50 WIB" duration-ms="11578" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["input tipe absens"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenario Staff Absen Off"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.NullKeterangan(TestAbsenOff.java:168)
+at ✽.Null Keterangan(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:38:50 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:39:08 WIB" duration-ms="18783" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["input keterangann"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenario Staff Absen Off"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [The filetype you are attempting to upload is not allowed.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [The filetype you are attempting to upload is not allowed.]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.get_warning(TestAbsenOff.java:180)
+at ✽.Get warning(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:42)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:39:08 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:39:51 WIB" duration-ms="42953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["submit berhasil"]]>
               </value>
             </param>
             <param index="1">
@@ -85,7 +250,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-18T16:31:18 WIB" name="tearDownClass" finished-at="2022-09-18T16:31:24 WIB" duration-ms="5790" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:39:51 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T12:39:55 WIB" duration-ms="3296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout website"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenario Staff Absen Off"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572]" started-at="2022-09-20T12:39:55 WIB" name="tearDownClass" finished-at="2022-09-20T12:40:01 WIB" duration-ms="5925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 18 16:30:14 WIB 2022</td>
+<td>Started on:</td><td>Tue Sep 20 12:37:26 WIB 2022</td>
 </tr>
-<tr><td>Total time:</td><td>70 seconds (70297 ms)</td>
+<tr><td>Total time:</td><td>154 seconds (154801 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,134 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "input divisis", "Scenario Staff Absen Off"</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [div]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.StaffNotChooseNamaShift(TestAbsenOff.java:133)
+	at ?.No Choose Nama Shift(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1395725953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1395725953'><pre>java.lang.AssertionError: expected [false] but found [div]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.StaffNotChooseNamaShift(TestAbsenOff.java:133)
+	at ?.No Choose Nama Shift(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:25)
+</pre></div></td>
+<td>11</td>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
+<tr>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "input tipe absens", "Scenario Staff Absen Off"</td>
+<td><div><pre>java.lang.AssertionError: expected [] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.NullKeterangan(TestAbsenOff.java:168)
+	at ?.Null Keterangan(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1818090701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1818090701'><pre>java.lang.AssertionError: expected [] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.NullKeterangan(TestAbsenOff.java:168)
+	at ?.Null Keterangan(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:36)
+</pre></div></td>
+<td>11</td>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
+<tr>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff input data form absen off", "Scenario Staff Absen Off"</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.NotDivis(TestAbsenOff.java:119)
+	at ?.Not Divis(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1093223281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1093223281'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.NotDivis(TestAbsenOff.java:119)
+	at ?.Not Divis(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:21)
+</pre></div></td>
+<td>11</td>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
+<tr>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "input shifts", "Scenario Staff Absen Off"</td>
+<td><div><pre>java.lang.AssertionError: expected [] but found [null]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.Tipeabsenkosong(TestAbsenOff.java:154)
+	at ?.Tipe absen kosong(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2114701475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2114701475'><pre>java.lang.AssertionError: expected [] but found [null]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.Tipeabsenkosong(TestAbsenOff.java:154)
+	at ?.Tipe absen kosong(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:31)
+</pre></div></td>
+<td>14</td>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
+<tr>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "input keterangann", "Scenario Staff Absen Off"</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [The filetype you are attempting to upload is not allowed.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.get_warning(TestAbsenOff.java:180)
+	at ?.Get warning(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:42)
+</pre></div><a href='#' onClick='toggleBox("stack-trace157201184", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace157201184'><pre>java.lang.AssertionError: expected [false] but found [The filetype you are attempting to upload is not allowed.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.PageObjectTMS.Staff.TestAbsenOff.get_warning(TestAbsenOff.java:180)
+	at ?.Get warning(file:///C:/Users/Hp/git/Project-TMS/src/test/resources/features/Staff/AbsenOff.feature:42)
+</pre></div></td>
+<td>18</td>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,24 +203,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff input data form absen off", "Scenario Staff Absen Off"</td>
-<td></td>
-<td>27</td>
-<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
-<tr>
 <td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff Choose form absen off", "Scenario Staff Absen Off"</td>
 <td></td>
-<td>11</td>
+<td>12</td>
 <td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
 <tr>
-<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff logout website", "Scenario Staff Absen Off"</td>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logout website", "Scenario Staff Absen Off"</td>
 <td></td>
 <td>3</td>
 <td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
 <tr>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "submit berhasil", "Scenario Staff Absen Off"</td>
+<td></td>
+<td>42</td>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
+<tr>
 <td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff Login Website", "Scenario Staff Absen Off"</td>
 <td></td>
-<td>20</td>
+<td>17</td>
+<td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
+<tr>
+<td title='com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Staff failed upload foto", "Scenario Staff Absen Off"</td>
+<td></td>
+<td>4</td>
 <td>com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff@2145b572</td></tr>
 </table><p>
 </body>

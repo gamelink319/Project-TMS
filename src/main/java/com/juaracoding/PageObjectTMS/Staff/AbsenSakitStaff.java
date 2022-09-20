@@ -1,6 +1,6 @@
 package com.juaracoding.PageObjectTMS.Staff;
 
-import org.openqa.selenium.Keys;
+//import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,17 +39,35 @@ public class AbsenSakitStaff {
 	@FindBy(xpath = "//input[@id='file']")
 	private WebElement BtnChooseFile;
 	
+	@FindBy(xpath = "//input[@id='file']")
+	private WebElement BtnChooseFile2;
+	
 	@FindBy(xpath = "//*[@id=\"divisi\"]/option[3]")
 	private WebElement BtnDiv;
 
-	@FindBy(xpath = "//div[@class='filter-option-inner-inner']")
+	@FindBy(xpath = "//*[@id=\"divisi\"]")
+	private WebElement getAlertDiv;
+	
+	@FindBy(xpath = "//div[@class='filter-option-inner']")
 	private WebElement BtnNamaShift;
+	
+	@FindBy(xpath="//span[normalize-space()='D3 (13:00 - 21:00)']")
+	private WebElement nameshift;
+	
+	@FindBy(xpath = "//div[@class='filter-option-inner-inner']")
+	private WebElement nameShiftRequired;
 	
 	@FindBy(xpath = "//select[@id='absen_type']")
 	private WebElement BtnTipeAbsen;
 	
+	@FindBy(xpath = "//select[@id='absen_type']")
+	private WebElement getTipeAbsen;
+	
 	@FindBy(xpath = "//textarea[@name='keterangan']")
 	private WebElement inputketerangan;
+	
+	@FindBy(xpath = "//textarea[@name='keterangan']")
+	private WebElement getketerangan;
 	
 	@FindBy(xpath = "//input[@value='Submit']")
 	private WebElement BtnSubmit;
@@ -60,11 +78,20 @@ public class AbsenSakitStaff {
 	@FindBy(xpath = "//b[normalize-space()='DIKA']")
 	private WebElement getTextDika;
 	
-	@FindBy(xpath = "//input[@aria-label='Search']")
-	private WebElement Input;
+//	@FindBy(xpath = "//input[@aria-label='Search']")
+//	private WebElement Input;
 	
-	@FindBy(xpath="//div[@class='panel-heading ui-sortable-handle']")
+	@FindBy(xpath = "//input[@id='file']")
+	private WebElement getUploadRequired;
+	
+	@FindBy(xpath = "//*[@id=\"previewing\"]")
+	private WebElement imgNotShown;
+	
+	@FindBy(xpath ="//*[@id=\"page-wrapper\"]/div/div[1]/div/h1")
 	private WebElement alert;
+	
+	@FindBy(xpath = "/html/body/p")
+	private WebElement dataFail;
 
 	public void inputnik(String NIK) {
 		inputnik.sendKeys(NIK);
@@ -89,42 +116,65 @@ public class AbsenSakitStaff {
 	public void ClickAbsnSakit() {
 		BtnAbsenSakit.click();
 	}
+	
+	public String getPleaseSelectFileD1() {
+		return getUploadRequired.getAttribute("required");
+	}
 
+	public void ClickChooseFile2(String File) {
+		BtnChooseFile2.sendKeys(File);
+	}
+	
+	public String imageNotShown() {
+	return imgNotShown.getTagName();
+	}
+	
 	public void ClickChooseFile(String File) {
 		BtnChooseFile.sendKeys(File);
 	}
 
+	public String DivNotChoose() {
+		return getAlertDiv.getAttribute("required");
+	}
 	public void ClickTipeDivisi() {
 		BtnDiv.click();
 	}
 
+	public String ShiftNotChoose() {
+		return nameShiftRequired.getTagName();
+	}
+	public void namaShift() {
+		nameshift.click();
+	}
+	
 	public void ClickNamaShift() {
 		BtnNamaShift.click();
-		Input.sendKeys("Non Shift");
-		Input.sendKeys(Keys.ENTER);
-//		Select select = new Select(BtnNamaShift);
-//		select.selectByVisibleText("SENIN PAGI (09:00 - 14:00)");
-//		BtnTipeAbsen.click();
-	}
 
+	}
+	public String TipeAbsenNotChoose() {
+		return getTipeAbsen.getAttribute("");
+	}
 	public void ClickBtnTipeAbsen(String TIPEABSEN) {
 		Select select = new Select(BtnTipeAbsen);
 		select.selectByValue(TIPEABSEN);
 		BtnTipeAbsen.click();
 	}
-
+	public String KeteranganKosong() {
+		return getketerangan.getAttribute("required");
+	}
 	public void InputKeterangan(String Keterangan) {
 		inputketerangan.sendKeys(Keterangan);
 	}
-	
+
+	public String dataFailedTosend() {
+		return dataFail.getText();
+	}
 	public void submit() {
 		BtnSubmit.click();
 	}
-	
 	public String alert() {
 		return alert.getText();
 	}
-	
 	public void logout() {
 		Btnlogout.click();
 	}
