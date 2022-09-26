@@ -1,33 +1,15 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff">
+      <class name="com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="3 4 7"/>
+          <include name="runScenario" invocation-numbers="0 1 2 11 12 14 18 21 29 32 34 41 42 43 44 45 51 52 53 54 55 59 123 124"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff -->
+      </class> <!-- com.juaracoding.PageObjectTMS.Admin.TestRunnerTMSAdmin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
-    <classes>
-      <class name="com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="3 4 5 6 7"/>
-          <include name="tearDownClass"/>
-        </methods>
-      </class> <!-- com.juaracoding.PageObjectTMS.Staff.TestRunnerTMSAStaff -->
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
->>>>>>> refs/remotes/origin/Nisa

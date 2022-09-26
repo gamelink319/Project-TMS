@@ -215,10 +215,10 @@ public class LaporanPage {
 	@FindBy(xpath = "//*[@id=\"page-container\"]/div/div[1]/div[1]/b")
 	private WebElement getTxtDIKA1;
 
-	@FindBy(xpath = "//*[@id=\"header\"]/ul/li/a/span")
+	@FindBy(xpath = "//a[@data-toggle='dropdown']")
 	private WebElement clickProfil;
 
-	@FindBy(xpath = "//a[@class='dropdown-item']")
+	@FindBy(xpath = "//a[normalize-space()='Log Out']")
 	private WebElement clickProfillLogout;
 
 	public void login1(String password) {

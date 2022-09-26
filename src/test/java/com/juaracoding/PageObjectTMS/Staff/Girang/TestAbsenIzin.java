@@ -5,7 +5,8 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-import com.juaracoding.PageObjectTMS.Staff.HooksTMSAStaff;
+import com.juaracoding.PageObjectTMS.HooksTMS;
+//import com.juaracoding.PageObjectTMS.Staff.HooksTMSAStaff;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -21,56 +22,63 @@ public class TestAbsenIzin {
 	private static ExtentTest extentest;
 
 	public TestAbsenIzin() {
-		driver = HooksTMSAStaff.driver;
-		extentest = HooksTMSAStaff.extentTest;
+		driver = HooksTMS.driver;
+		extentest = HooksTMS.extentTest;
 	}
 	
 	@When("Staff go to web ptdikaC1")
 	public void staff_go_to_web_ptdikac1() {
 		driver.get(Constants.URL);
-		HooksTMSAStaff.delay(2);
+//		HooksTMSAStaff.delay(2);
+		HooksTMS.delay(1);;
 		extentest.log(LogStatus.PASS, "Staff go to web ptdikaC1");
 	}
 	
 	@And("Staff enter own nik and passwordC1")
 	public void staff_enter_own_nik_and_passwordc1() {
 		absenIzinPage.staffLogin("D6200927", "1997-10-23");
-		HooksTMSAStaff.delay(2);
+//		HooksTMSAStaff.delay(2);
+		HooksTMS.delay(1);;
 		extentest.log(LogStatus.PASS, "Staff enter own nik and passwordC1");
 	}
 	
 	@And("Staff click button loginC1")
 	public void staff_click_button_loginc1() {
 		absenIzinPage.clickBtnLogin();
-		HooksTMSAStaff.delay(2);
+//		HooksTMSAStaff.delay(2);
+		HooksTMS.delay(1);;
 		extentest.log(LogStatus.PASS, "Staff click button loginC1");
 	}
 	
 	@And("Staff click laporan kegiatanC1")
 	public void staff_click_laporan_kegiatanc1() {
 		absenIzinPage.clickLaporanKegiatan();
-		HooksTMSAStaff.delay(2);
+//		HooksTMSAStaff.delay(2);
+		HooksTMS.delay(1);;
 		extentest.log(LogStatus.PASS, "Staff click laporan kegiatanC1");
 	}
 	
 	@And("Staff choose dan click absen izinC1")
 	public void staff_choose_dan_click_absen_izinc1() {
 		absenIzinPage.clickAbsenIzin();
-		HooksTMSAStaff.delay(2);
+//		HooksTMSAStaff.delay(2);
+		HooksTMS.delay(1);;
 		extentest.log(LogStatus.PASS, "Staff choose dan click absen izinC1");
 	}
 	
 	@Then("Staff at form absen izin")
 	public void staff_at_form_absen_izin() {
 		assertEquals(absenIzinPage.getFormAbsenIzin(), "Absen Izin");
-		HooksTMSAStaff.delay(2);
+//		HooksTMSAStaff.delay(2);
+		HooksTMS.delay(1);;
 		extentest.log(LogStatus.PASS, "Staff at form absen izin");
 	}
 	
 	@Then("Staff see button choose")
 	public void staff_see_button_choose() {
 		assertEquals(absenIzinPage.getUploadFile(), "Upload Foto Selfie : *");
-		HooksTMSAStaff.delay(2);
+//		HooksTMSAStaff.delay(2);
+		HooksTMS.delay(1);;
 		extentest.log(LogStatus.PASS, "Staff see button choose");
 	}
 	

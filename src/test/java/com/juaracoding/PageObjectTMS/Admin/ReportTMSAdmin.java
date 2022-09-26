@@ -7,6 +7,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.SendKeysAction;
 
+import com.juaracoding.PageObjectTMS.HooksTMS;
+//import com.juaracoding.PageObjectTMS.Staff.HooksTMSAStaff;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -25,8 +27,11 @@ public class ReportTMSAdmin {
 
 
 	public ReportTMSAdmin() {
-		driver = HooksTMSAdmin.driver;
-		extentTest = HooksTMSAdmin.extentTest;
+//		driver = HooksTMSAStaff.driver;
+//		extentTest = HooksTMSAdmin.extentTest;
+//	}
+		driver = HooksTMS.driver;
+		extentTest = HooksTMS.extentTest;
 	}
 
 	@When("Admin click list absen")
@@ -43,7 +48,8 @@ public class ReportTMSAdmin {
 
 	@Then("Admin go to absen masuk")
 	public void Admin_go_to_absen_masuk() {
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		reportAbsen.GetAbsenMasuk();
 		assertEquals(reportAbsen.GetAbsenMasuk(), "Report Masuk!!!");
 		extentTest.log(LogStatus.PASS, "Admin go to absen masuk");
@@ -57,7 +63,8 @@ public class ReportTMSAdmin {
 
 	@Then("Admin go to absen pulang")
 	public void Admin_go_to_absen_pulang() {
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		reportAbsen.GetAbsenPulang();
 		assertEquals(reportAbsen.GetAbsenPulang(), "Report Pulang!!!");
 		extentTest.log(LogStatus.PASS, "Admin go to absen pulang");
@@ -72,7 +79,8 @@ public class ReportTMSAdmin {
 
 	@Then("Admin go to absen sakit")
 	public void Admin_go_to_absen_sakit() {
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		reportAbsen.GetAbsenSakit();
 		assertEquals(reportAbsen.GetAbsenSakit(), "Report Sakit!!!");
 		extentTest.log(LogStatus.PASS, "Admin go to absen sakit");
@@ -87,7 +95,8 @@ public class ReportTMSAdmin {
 
 	@Then("Admin go to absen off")
 	public void Admin_go_to_absen_off() {
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		reportAbsen.GetAbsenOff();
 		assertEquals(reportAbsen.GetAbsenOff(), "Report OFF!!!");
 		extentTest.log(LogStatus.PASS, "Admin go to absen off");
@@ -102,7 +111,8 @@ public class ReportTMSAdmin {
 
 	@Then("Admin go to absen shifting")
 	public void Admin_go_to_absen_shifting() {
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		reportAbsen.GetAbsenShifting();
 		assertEquals(reportAbsen.GetAbsenShifting(), "Report Absen SHIFTING");
 		extentTest.log(LogStatus.PASS, "Admin go to absen off");
@@ -117,7 +127,8 @@ public class ReportTMSAdmin {
 
 	@Then("Admin go to absen non shifting")
 	public void Admin_go_to_absen_non_shifting() {
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		reportAbsen.getAbsenNonShifString();
 		assertEquals(reportAbsen.getAbsenNonShifString(), "Report Absen NON SHIFTING");
 		extentTest.log(LogStatus.PASS, "Admin go to absen non shifting");
@@ -127,7 +138,8 @@ public class ReportTMSAdmin {
 	public void Admin_select_position_all() {
 		formAbsen.ClickSelectPosition();
 		formAbsen.InputSelect("all");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select position all");
 	}
 
@@ -135,7 +147,8 @@ public class ReportTMSAdmin {
 	public void Admin_branch_all() {
 		formAbsen.ClickSelectBranch();
 		formAbsen.InputSelect("all");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select branch all");
 	}
 
@@ -143,7 +156,8 @@ public class ReportTMSAdmin {
 	public void Admin_branch_manager() {
 		formAbsen.ClickSelectPosition();
 		formAbsen.InputSelect("manager");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select branch manager");
 	}
 
@@ -151,7 +165,8 @@ public class ReportTMSAdmin {
 	public void Admin_select_unit_all() {
 		formAbsen.ClickSelectUnit();
 		formAbsen.InputSelect("all");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select unit all");
 	}
 
@@ -170,7 +185,8 @@ public class ReportTMSAdmin {
 
 	@Then("Admin validate data")
 	public void Admin_validate_data() {
-		HooksTMSAdmin.delay(3);
+//		HooksTMSAdmin.delay(3);
+		HooksTMS.delay(1);
 		formAbsen.CheckFile();
 		assertTrue(formAbsen.CheckFile());
 		extentTest.log(LogStatus.PASS, "Admin validate data");
@@ -178,9 +194,11 @@ public class ReportTMSAdmin {
 
 	@Then("Admin validate No Data")
 	public void Admin_validate_No_data() {
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		formAbsen.ClickBtnExportNoData();
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		String TxtAlert = driver.switchTo().alert().getText();
 		System.out.println(TxtAlert);
 		assertEquals(TxtAlert, "No data...!!!");
@@ -190,22 +208,27 @@ public class ReportTMSAdmin {
 
 	@Then("Admin validate tidak ada data")
 	public void Admin_validate_tidak_ada_data() {
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		formAbsen.ClickBtnExportNoData();
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		String TxtAlert = driver.switchTo().alert().getText();
 		System.out.println(TxtAlert);
 		assertEquals(TxtAlert, "Tidak Ada Data");
 		driver.switchTo().alert().accept();
-		HooksTMSAdmin.delay(3);
+//		HooksTMSAdmin.delay(3);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin validate tidak ada data");
 	}
 
 	@Then("Admin validate wrong input date")
 	public void Admin_validate_wrong_input_date() {
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		formAbsen.ClickBtnExportNoData();
-		HooksTMSAdmin.delay(1);
+//		HooksTMSAdmin.delay(1);
+		HooksTMS.delay(1);
 		String TxtAlert = driver.switchTo().alert().getText();
 		System.out.println(TxtAlert);
 		assertEquals(TxtAlert, "Maximal Penarikan Data adalah 1 Bulan / 31 Hari !!!");
@@ -216,7 +239,8 @@ public class ReportTMSAdmin {
 	@When("Admin select position null")
 	public void Admin_select_position_null() {
 		System.out.println("Skip karna null");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select position null");
 	}
 
@@ -224,7 +248,8 @@ public class ReportTMSAdmin {
 	public void Admin_select_position_callcenter() {
 		formAbsen.ClickSelectPosition();
 		formAbsen.InputSelect("call center");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select position call center");
 	}
 
@@ -232,7 +257,8 @@ public class ReportTMSAdmin {
 	public void Admin_select_position_admin_credit() {
 		formAbsen.ClickSelectPosition();
 		formAbsen.InputSelect("admin credit");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select admin credit");
 	}
 
@@ -240,14 +266,16 @@ public class ReportTMSAdmin {
 	public void Admin_select_position_rentcar() {
 		formAbsen.ClickSelectPosition();
 		formAbsen.InputSelect("spg");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select position spg");
 	}
 
 	@And("Admin select branch null")
 	public void Admin_branch_null() {
 		System.out.println("Skip branch karna null");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select branch null");
 	}
 
@@ -255,7 +283,8 @@ public class ReportTMSAdmin {
 	public void Admin_branch_bandung() {
 		formAbsen.ClickSelectBranch();
 		formAbsen.InputSelect("bandung");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select branch bandung");
 	}
 
@@ -263,7 +292,8 @@ public class ReportTMSAdmin {
 	public void Admin_branch_jakarta() {
 		formAbsen.ClickSelectBranch();
 		formAbsen.InputSelect("jakarta");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select branch jakarta");
 	}
 
@@ -271,21 +301,24 @@ public class ReportTMSAdmin {
 	public void Admin_branch_surabaya() {
 		formAbsen.ClickSelectBranch();
 		formAbsen.InputSelect("surabaya");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select branch surabaya");
 	}
 
 	@And("Refresh page")
 	public void refresh_page() {
 		driver.navigate().refresh();
-		HooksTMSAdmin.delay(3);
+//		HooksTMSAdmin.delay(3);
+		HooksTMS.delay(1);
 	}
 
 	@When("Admin select unit airasia")
 	public void Admin_select_unit_airasia() {
 		formAbsen.ClickSelectUnit();
 		formAbsen.InputSelect("airasia");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(1);
 		extentTest.log(LogStatus.PASS, "Admin select unit airasia");
 	}
 
@@ -293,7 +326,8 @@ public class ReportTMSAdmin {
 	public void Admin_select_unit_bcaapi() {
 		formAbsen.ClickSelectUnit();
 		formAbsen.InputSelect("bca api");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select unit bca api");
 	}
 
@@ -301,14 +335,16 @@ public class ReportTMSAdmin {
 	public void Admin_select_unit_itprogrammer() {
 		formAbsen.ClickSelectUnit();
 		formAbsen.InputSelect("it programmer");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select unit it programmer");
 	}
 
 	@When("Admin select unit null")
 	public void Admin_select_unit_null() {
 		System.out.println("Skip unit karna null");
-		HooksTMSAdmin.delay(2);
+//		HooksTMSAdmin.delay(2);
+		HooksTMS.delay(2);
 		extentTest.log(LogStatus.PASS, "Admin select unit null");
 	}
 
@@ -342,7 +378,8 @@ public class ReportTMSAdmin {
 	
 	@When("Admin checking exist file")
 	public void Admin_checking_exist_file() {
-		HooksTMSAdmin.delay(3);
+//		HooksTMSAdmin.delay(3);
+		HooksTMS.delay(1);
 		formAbsen.validFile();
 		assertTrue(formAbsen.validFile());
 		System.out.println("Test Barhasil");
